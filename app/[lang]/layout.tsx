@@ -24,6 +24,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             default: 'Buloqboshi Sanatorium',
         },
         description: 'Health and Recreation Center in Angren mountains',
+        icons: {
+            icon: [
+                { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+                { url: '/favicon.ico', sizes: '32x32' }
+            ],
+            apple: [
+                { url: '/icon.png', sizes: '180x180', type: 'image/png' }
+            ],
+            shortcut: '/favicon.ico'
+        },
         alternates: {
             languages: {
                 'en': '/en',

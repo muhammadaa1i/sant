@@ -29,7 +29,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="Buloqboshi Logo" width={40} height={40} className="object-contain" />
+              <Image src="/logo.png" alt="Buloqboshi Logo" width={40} height={40} className="object-cover rounded-full" />
               <h3 className="text-xl font-bold text-primary">{dict.footer.brand_name}</h3>
             </div>
             <p className="text-sm text-muted-foreground">

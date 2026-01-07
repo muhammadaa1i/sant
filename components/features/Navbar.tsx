@@ -23,7 +23,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href={`/${lang}`} className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Buloqboshi Logo" width={48} height={48} className="object-contain" />
+            <Image src="/logo.png" alt="Buloqboshi Logo" width={48} height={48} className="object-cover rounded-full" />
             <span className="text-xl font-bold text-primary">Buloqboshi</span>
           </Link>
 
