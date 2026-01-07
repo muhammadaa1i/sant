@@ -6,9 +6,9 @@ import Services from "@/components/features/Services";
 import Rooms from "@/components/features/Rooms";
 import Contact from "@/components/features/Contact";
 
-export default async function Home({ params }: { params: Promise<{ lang: Locale }> }) {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
 
   return (
     <div className="flex flex-col w-full">
