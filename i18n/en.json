@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "rooms": "Rooms",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Buloqboshi Sanatorium",
+    "subtitle": "Your place for rest and recovery in the mountains",
+    "cta": "Book a Room"
+  },
+  "about": {
+    "title": "About Buloqboshi Sanatorium",
+    "description": "Located at an altitude of 1,300 meters above sea level in the city of Angren. We offer clean mountain air, professional doctors, and over 40 types of procedures.",
+    "sub_description": "A unique place combining treatment and relaxation. Ideal for restoring the body and strengthening health in a calm mountain atmosphere."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Modern and effective procedures to restore your health.",
+    "diagnostics": "Diagnostics",
+    "treatment": "Treatments",
+    "specialists": "Specialists",
+    "additional": "Additional Services"
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "subtitle": "Comfortable and modern rooms for your rest.",
+    "standard": "Standard Room",
+    "luxe": "Luxe Room",
+    "cottage": "Family Cottage",
+    "price_from": "from",
+    "details": "Details",
+    "features": {
+      "meals_3": "3 meals a day",
+      "treatments_premium": "Premium treatments",
+      "treatments": "Treatment procedures",
+      "balcony_view": "Balcony with View",
+      "tv_wifi": "TV & Wi-Fi",
+      "family_friendly": "Family friendly",
+      "private_area": "Private area",
+      "kitchen": "Kitchen",
+      "all_inclusive": "All inclusive"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Fill out the form and we will contact you shortly.",
+    "form_name": "Name",
+    "form_name_placeholder": "Enter your name",
+    "form_phone": "Phone",
+    "form_phone_placeholder": "+998",
+    "form_submit": "Send Request"
+  },
+  "footer": {
+    "brand_name": "Buloqboshi Sanatorium",
+    "copyright": "Buloqboshi Sanatorium.",
+    "address": "Tashkent region, Angren, Yangiobod territory (Buloqboshi)",
+    "rights": "All rights reserved",
+    "developedBy": "Developed by [YourName]",
+    "nearest_cities": "Nearest cities"
+  }
+}

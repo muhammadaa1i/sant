@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Bosh Sahifa",
+    "services": "Xizmatlar",
+    "rooms": "Xonalar",
+    "contact": "Aloqa",
+    "book": "Band Qilish"
+  },
+  "hero": {
+    "title": "Buloqboshi Sanatoriyasi",
+    "subtitle": "Tog' bag'rida dam olish va sog'likni tiklash maskani",
+    "cta": "Xona Band Qilish"
+  },
+  "about": {
+    "title": "Buloqboshi Sanatoriyasi Haqida",
+    "description": "Angren shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
+    "sub_description": "Davolanish va dam olishni o'zida mujassam etgan noyob maskan. Tana va ruhni tiklash uchun ideal joy."
+  },
+  "services": {
+    "title": "Bizning Xizmatlar",
+    "subtitle": "Sog'lig'ingizni tiklash uchun zamonaviy va samarali muolajalar.",
+    "diagnostics": "Diagnostika",
+    "treatment": "Muolajalar",
+    "specialists": "Mutaxassislar",
+    "additional": "Qo'shimcha Xizmatlar"
+  },
+  "rooms": {
+    "title": "Bizning Xonalar",
+    "subtitle": "Sizning dam olishingiz uchun qulay va zamonaviy xonalar.",
+    "standard": "Standart Xona",
+    "luxe": "Lyuks Xona",
+    "cottage": "Oilaiviy Kottej",
+    "price_from": "boshlab",
+    "details": "Batafsil",
+    "features": {
+      "meals_3": "Kuniga 3 marta ovqat",
+      "treatments_premium": "Premium davolanish",
+      "treatments": "Davolanish protseduralar",
+      "balcony_view": "Manzarali balkon",
+      "tv_wifi": "TV va Wi-Fi",
+      "family_friendly": "Oila uchun qulay",
+      "private_area": "Shaxsiy hudud",
+      "kitchen": "Oshxona",
+      "all_inclusive": "All inclusive"
+    }
+  },
+  "contact": {
+    "title": "Biz Bilan Aloqa",
+    "description": "Formani to'ldiring va biz siz bilan tez orada bog'lanamiz.",
+    "form_name": "Ismingiz",
+    "form_name_placeholder": "Ismingizni kiriting",
+    "form_phone": "Telefon Raqamingiz",
+    "form_phone_placeholder": "+998",
+    "form_submit": "Yuborish"
+  },
+  "footer": {
+    "brand_name": "Buloqboshi Sanatoriyasi",
+    "copyright": "Buloqboshi Sanatoriyasi.",
+    "address": "Toshkent viloyati, Angren shahri, Yangiobod hududi (Buloqboshi)",
+    "rights": "Barcha huquqlar himoyalangan",
+    "developedBy": "Dasturchi: [Ismingiz]",
+    "nearest_cities": "Yaqin shaharlar"
+  }
+}

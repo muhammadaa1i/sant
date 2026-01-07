@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="circle">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#00A0E3"/>
+  
+  <!-- Content clipped to circle -->
+  <g clip-path="url(#circle)">
+    <!-- Water wave bottom -->
+    <path d="M 20 140 Q 40 130, 60 140 T 100 140 T 140 140 T 180 140 L 180 200 L 20 200 Z" fill="#0080C0"/>
+    
+    <!-- Larger water wave -->
+    <path d="M 10 120 Q 30 110, 50 120 T 90 120 T 130 120 T 170 120 Q 180 120, 185 125 L 185 200 L 10 200 Z" fill="#0099D6"/>
+    
+    <!-- Inner white circle for letter -->
+    <circle cx="100" cy="85" r="55" fill="white"/>
+    
+    <!-- Top wave accent -->
+    <path d="M 40 30 Q 60 20, 80 30 T 120 30 T 160 30" stroke="#003D7A" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+    <!-- Letter B -->
+    <text x="100" y="115" font-size="70" font-family="serif" font-weight="bold" font-style="italic" fill="#003D7A" text-anchor="middle">B</text>
+  </g>
+</svg>
