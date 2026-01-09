@@ -2,23 +2,9 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { i18n } from './i18n/settings'
 
-function getLocale(request: NextRequest): string {
-  // Get the preferred locale from Accept-Language header
-  const acceptLanguage = request.headers.get('accept-language')
-  
-  if (acceptLanguage) {
-    // Parse accept-language header and find best match
-    const preferredLocales = acceptLanguage
-      .split(',')
-      .map(lang => lang.split(';')[0].trim().split('-')[0])
-    
-    for (const locale of preferredLocales) {
-      if (i18n.locales.includes(locale as any)) {
-        return locale
-      }
-    }
-  }
-  
+function getLocale(_request: NextRequest): string {
+  // Always use the configured default locale on first visit.
+  // This prevents browsers with `Accept-Language: ru` from being redirected to /ru.
   return i18n.defaultLocale
 }
 

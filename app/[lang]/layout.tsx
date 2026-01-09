@@ -62,10 +62,7 @@ export default async function RootLayout({
     params: Promise<{ lang: string }>
 }) {
     const { lang } = await params;
-    const dict = await getDictionary(lang as Locale);
-    
-    console.log('[Layout] Language:', lang);
-    console.log('[Layout] Dictionary keys:', Object.keys(dict || {}));
+    const dict = await getDictionary(lang as Locale)
 
     return (
         <html lang={lang} className="scroll-smooth">

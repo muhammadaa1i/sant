@@ -1,5 +1,4 @@
 import { Dictionary } from '@/lib/types';
-import Image from 'next/image';
 
 export default function About({ dict }: { dict: Dictionary }) {
   return (
@@ -19,13 +18,21 @@ export default function About({ dict }: { dict: Dictionary }) {
             </p>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Video (place file under: public/videos/rek.mp4) */}
           <div className="w-full md:w-1/2">
             <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl bg-muted">
-                {/* Check if you have an image, if not perform a placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-200 text-gray-500">
-                    Image: Sanatorium View
-                </div>
+              <video
+                className="absolute inset-0 h-full w-full object-cover"
+                autoPlay
+                muted
+                controls
+                loop
+                playsInline
+                preload="metadata"
+                aria-label="Sanatorium promotional video"
+              >
+                <source src="/videos/rek.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
