@@ -18,7 +18,7 @@ export default function About({ dict }: { dict: Dictionary }) {
             </p>
           </div>
 
-          {/* Video (place file under: public/videos/rek.mp4) */}
+          {/* Video */}
           <div className="w-full md:w-1/2">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-muted aspect-video">
               <video
@@ -30,7 +30,7 @@ export default function About({ dict }: { dict: Dictionary }) {
                 playsInline
                 preload="metadata"
                 aria-label="Sanatorium promotional video">
-                <source src="/videos/rek.mp4" type="video/mp4" />
+                <source src="/videos/REKLAMA.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
