@@ -20,9 +20,13 @@
     "title": "Our Services",
     "subtitle": "Modern and effective procedures to restore your health.",
     "diagnostics": "Diagnostics",
+    "diagnostics_desc": "Ultrasound, Cardiogram, Clinical Tests",
     "treatment": "Treatments",
+    "treatment_desc": "Physiotherapy, Hydrotherapy, Massage",
     "specialists": "Specialists",
-    "additional": "Additional Services"
+    "specialists_desc": "Cardiologist, Neurologist, Therapist",
+    "additional": "Additional Services",
+    "additional_desc": "Swimming Pool, Sauna, Mountain Walks"
   },
   "rooms": {
     "title": "Our Rooms",
@@ -31,7 +35,9 @@
     "luxe": "Luxe Room",
     "cottage": "Family Cottage",
     "price_from": "from",
+    "per_night": "/ night",
     "details": "Details",
+    "room_image": "Room Image",
     "features": {
       "meals_3": "3 meals a day",
       "treatments_premium": "Premium treatments",
@@ -51,7 +57,12 @@
     "form_name_placeholder": "Enter your name",
     "form_phone": "Phone",
     "form_phone_placeholder": "+998",
-    "form_submit": "Send Request"
+    "form_comment": "Comment",
+    "form_comment_placeholder": "Your message or questions...",
+    "form_submit": "Send Request",
+    "form_sending": "Sending...",
+    "form_success": "Message sent successfully!",
+    "form_error": "Error sending message. Please try again."
   },
   "footer": {
     "brand_name": "Buloqboshi Sanatorium",

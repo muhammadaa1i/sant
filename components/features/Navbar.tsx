@@ -20,26 +20,26 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-3 lg:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href={`/${lang}`} className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Buloqboshi Logo" width={48} height={48} className="object-cover rounded-full" />
-            <span className="text-xl font-bold text-primary">Buloqboshi</span>
+          <Link href={`/${lang}`} className="flex items-center gap-2 shrink-0">
+            <Image src="/logo.png" alt="Buloqboshi Logo" width={40} height={40} className="object-cover rounded-full lg:w-12 lg:h-12" />
+            <span className="text-lg lg:text-xl font-bold text-primary">Buloqboshi</span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium transition-colors hover:text-primary"
+                className="text-sm font-medium transition-colors hover:text-primary whitespace-nowrap"
               >
                 {link.label}
               </Link>
             ))}
             <LanguageSwitcher />
-            <Button size="sm" className="hidden lg:flex" asChild>
+            <Button size="sm" className="hidden lg:inline-flex text-sm h-9 px-4 whitespace-nowrap" asChild>
                 <Link href={`/${lang}#contact`}>{dict.nav.book}</Link>
             </Button>
           </div>
@@ -73,7 +73,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
             <div className="pt-2 border-t">
               <LanguageSwitcher showLabel={true} />
             </div>
-            <Button size="sm" className="w-full" asChild>
+            <Button size="sm" className="w-full max-w-[280px]" asChild>
               <Link href={`/${lang}#contact`}>{dict.nav.book}</Link>
             </Button>
           </div>

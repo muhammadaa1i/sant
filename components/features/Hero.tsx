@@ -10,17 +10,19 @@ export default function Hero({ dict }: { dict: Dictionary }) {
       <div className="absolute inset-0 bg-gradient-to-b from-[#003D7A]/60 via-[#00A0E3]/40 to-[#003D7A]/60"></div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg" data-aos="fade-up">
           {dict.hero.title}
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
           {dict.hero.subtitle}
         </p>
-        <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto" asChild>
-          <Link href="#contact">
-            {dict.hero.cta}
-          </Link>
-        </Button>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto" asChild>
+            <Link href="#contact">
+              {dict.hero.cta}
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   );

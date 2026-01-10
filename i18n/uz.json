@@ -20,9 +20,13 @@
     "title": "Bizning Xizmatlar",
     "subtitle": "Sog'lig'ingizni tiklash uchun zamonaviy va samarali muolajalar.",
     "diagnostics": "Diagnostika",
+    "diagnostics_desc": "Ultratovush, Kardiogramma, Klinik tahlillar",
     "treatment": "Muolajalar",
+    "treatment_desc": "Fizioterapiya, Gidroterapiya, Massaj",
     "specialists": "Mutaxassislar",
-    "additional": "Qo'shimcha Xizmatlar"
+    "specialists_desc": "Kardiolog, Nevrolog, Terapevt",
+    "additional": "Qo'shimcha Xizmatlar",
+    "additional_desc": "Suzish havzasi, Sauna, Tog' sayrlar"
   },
   "rooms": {
     "title": "Bizning Xonalar",
@@ -31,7 +35,9 @@
     "luxe": "Lyuks Xona",
     "cottage": "Oilaiviy Kottej",
     "price_from": "boshlab",
+    "per_night": "/ kecha",
     "details": "Batafsil",
+    "room_image": "Xona Rasmi",
     "features": {
       "meals_3": "Kuniga 3 marta ovqat",
       "treatments_premium": "Premium davolanish",
@@ -51,7 +57,12 @@
     "form_name_placeholder": "Ismingizni kiriting",
     "form_phone": "Telefon Raqamingiz",
     "form_phone_placeholder": "+998",
-    "form_submit": "Yuborish"
+    "form_comment": "Izoh",
+    "form_comment_placeholder": "Sizning xabaringiz yoki savollaringiz...",
+    "form_submit": "Yuborish",
+    "form_sending": "Yuborilmoqda...",
+    "form_success": "Xabar muvaffaqiyatli yuborildi!",
+    "form_error": "Xabar yuborishda xatolik. Iltimos, qayta urinib ko'ring."
   },
   "footer": {
     "brand_name": "Buloqboshi Sanatoriyasi",

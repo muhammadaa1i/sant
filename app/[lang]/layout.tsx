@@ -5,6 +5,7 @@ import { i18n, Locale } from "../../i18n/settings";
 import { getDictionary } from "../../i18n/get-dictionary";
 import Navbar from "@/components/features/Navbar";
 import Footer from "@/components/features/Footer";
+import AOSInit from "@/components/AOSInit";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -69,6 +70,7 @@ export default async function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground flex flex-col min-h-screen`}
             >
+                <AOSInit />
                 <Navbar dict={dict} lang={lang} />
                 <main className="flex-grow">
                     {children}

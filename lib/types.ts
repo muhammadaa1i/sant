@@ -20,9 +20,13 @@ export type Dictionary = {
     title: string;
     subtitle: string;
     diagnostics: string;
+    diagnostics_desc: string;
     treatment: string;
+    treatment_desc: string;
     specialists: string;
+    specialists_desc: string;
     additional: string;
+    additional_desc: string;
   };
   rooms: {
     title: string;
@@ -31,7 +35,9 @@ export type Dictionary = {
     luxe: string;
     cottage: string;
     price_from: string;
+    per_night: string;
     details: string;
+    room_image: string;
     features: {
       meals_3: string;
       treatments_premium: string;
@@ -51,7 +57,12 @@ export type Dictionary = {
     form_name_placeholder: string;
     form_phone: string;
     form_phone_placeholder: string;
+    form_comment: string;
+    form_comment_placeholder: string;
     form_submit: string;
+    form_sending: string;
+    form_success: string;
+    form_error: string;
   };
   footer: {
     brand_name: string;
