@@ -12,24 +12,38 @@ import { Dictionary } from '@/lib/types';
 export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const pathname = usePathname();
   
   const isHomePage = pathname === `/${lang}` || pathname === `/${lang}/`;
-  const isSolid = scrolled || !isHomePage;
+  const isSolid = scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      const sections = ['services', 'rooms', 'contact'];
+      const scrollPos = window.scrollY + 150;
+      
+      let current = '';
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (el && scrollPos >= el.offsetTop && scrollPos < el.offsetTop + el.offsetHeight) {
+          current = section;
+          break;
+        }
+      }
+      setActiveSection(current);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
-    { href: `/${lang}`, label: dict.nav.home },
-    { href: `/${lang}/services`, label: dict.nav.services },
-    { href: `/${lang}/rooms`, label: dict.nav.rooms },
-    { href: `/${lang}/contact`, label: dict.nav.contact },
+    { href: `#`, label: dict.nav.home },
+    { href: `#services`, label: dict.nav.services },
+    { href: `#rooms`, label: dict.nav.rooms },
+    { href: `#contact`, label: dict.nav.contact },
   ];
 
   return (
@@ -49,19 +63,21 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
 
             <div className="hidden md:flex items-center gap-6 min-w-0">
               {navLinks.map((link) => {
-                const isActive = pathname === link.href;
+                const sectionId = link.href.replace('#', '');
+                const isActive = (sectionId === '' && activeSection === '') || (sectionId !== '' && activeSection === sectionId);
+                
                 return (
-                  <Link
+                  <a
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-semibold tracking-wide uppercase transition-all whitespace-nowrap ${
+                    className={`text-sm font-semibold tracking-wide uppercase transition-all whitespace-nowrap cursor-pointer ${
                       isActive 
                         ? 'text-primary drop-shadow-sm scale-105 underline underline-offset-4 decoration-2' 
                         : 'hover:opacity-70'
                     }`}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -69,15 +85,15 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
 
           {/* Center: Logo */}
           <div className="flex items-center justify-center">
-            <Link href={`/${lang}`} className="hidden md:flex items-center gap-3 group">
+            <a href="#" className="hidden md:flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-full drop-shadow-md">
                 <Image src="/logo.png" alt="Buloqboshi Logo" fill className="object-cover" />
               </div>
               <span className="text-xl font-bold tracking-widest uppercase drop-shadow-sm">Buloqboshi</span>
-            </Link>
-            <Link href={`/${lang}`} className="flex md:hidden items-center gap-2">
+            </a>
+            <a href="#" className="flex md:hidden items-center gap-2">
                <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" />
-            </Link>
+            </a>
           </div>
 
           {/* Right: Language & Booking */}
@@ -90,7 +106,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
               className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-md px-6 h-11 text-sm font-semibold tracking-wide capitalize shadow-md transition-transform hover:scale-105" 
               asChild
             >
-                <Link href={`/${lang}/contact`}>{dict.nav.book}</Link>
+                <a href="#contact">{dict.nav.book}</a>
             </Button>
           </div>
         </div>
@@ -109,12 +125,12 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
         
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-6">
-          <Link href={`/${lang}`} className="flex flex-col items-center gap-2 pl-4" onClick={() => setIsOpen(false)}>
+          <a href="#" className="flex flex-col items-center gap-2 pl-4" onClick={() => setIsOpen(false)}>
             <Image src="/logo.png" alt="Logo" width={56} height={56} className="rounded-full object-cover shadow-sm" />
             <span className="text-sm font-bold tracking-widest text-primary uppercase text-center">
               Buloqboshi<br/>Sanatoriyasi
             </span>
-          </Link>
+          </a>
           <button 
             className="p-2 text-slate-500 hover:text-slate-900 transition-colors"
             onClick={() => setIsOpen(false)}
@@ -126,9 +142,11 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
         {/* Sidebar Links */}
         <div className="flex flex-col px-8 mt-12 gap-8 flex-grow">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const sectionId = link.href.replace('#', '');
+            const isActive = (sectionId === '' && activeSection === '') || (sectionId !== '' && activeSection === sectionId);
+            
             return (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className={`text-2xl font-bold transition-all flex items-center gap-3 ${
@@ -138,7 +156,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
               >
                 {isActive && <div className="w-2 h-8 bg-primary rounded-full" />}
                 {link.label}
-              </Link>
+              </a>
             );
           })}
           <div className="md:hidden mt-4 pt-4 border-t border-slate-100">

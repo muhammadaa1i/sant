@@ -24,9 +24,9 @@ export default function About({ dict, lang }: { dict: Dictionary, lang: string }
             </p>
             <div className="pt-4">
               <Button asChild variant="outline" className="rounded-full px-8 py-6 text-base hover:bg-primary hover:text-primary-foreground transition-all">
-                <Link href={`/${lang}/services`}>
+                <a href="#services">
                   {dict.nav.services}
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
