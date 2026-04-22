@@ -2,13 +2,13 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { i18n } from './i18n/settings'
 
-function getLocale(_request: NextRequest): string {
+function getLocale(): string {
   // Always use the configured default locale on first visit.
   // This prevents browsers with `Accept-Language: ru` from being redirected to /ru.
   return i18n.defaultLocale
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
@@ -17,8 +17,8 @@ export function middleware(request: NextRequest) {
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request)
-    
+    const locale = getLocale()
+
     // e.g. incoming request is /products
     // The new URL is now /en/products
     return NextResponse.redirect(

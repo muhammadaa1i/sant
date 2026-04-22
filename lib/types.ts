@@ -12,6 +12,7 @@ export type Dictionary = {
     cta: string;
   };
   about: {
+    section_label: string;
     title: string;
     description: string;
     sub_description: string;
@@ -19,16 +20,28 @@ export type Dictionary = {
   services: {
     title: string;
     subtitle: string;
-    diagnostics: string;
-    diagnostics_desc: string;
-    treatment: string;
-    treatment_desc: string;
-    specialists: string;
-    specialists_desc: string;
-    additional: string;
-    additional_desc: string;
+    items: {
+      title: string;
+      desc: string;
+      list: string[];
+      footer: string;
+    }[];
+    top_activities_title: string;
+    top_activities: {
+      title: string;
+      desc: string;
+      benefits_title: string;
+      benefits: string[];
+    }[];
+    massage_services_title: string;
+    massage_services_subtitle: string;
+    massage_services: {
+      title: string;
+      desc: string;
+    }[];
   };
   rooms: {
+    section_label: string;
     title: string;
     subtitle: string;
     standard: string;
@@ -51,6 +64,8 @@ export type Dictionary = {
     };
   };
   contact: {
+    section_label: string;
+    section_title: string;
     title: string;
     description: string;
     form_name: string;
@@ -64,6 +79,36 @@ export type Dictionary = {
     form_success: string;
     form_error: string;
   };
+  weather: {
+    city: string;
+    country: string;
+    updated: string;
+    unavailable_title: string;
+    unavailable_message: string;
+    weekdays: {
+      mon: string;
+      tue: string;
+      wed: string;
+      thu: string;
+      fri: string;
+      sat: string;
+      sun: string;
+    };
+    conditions: {
+      clear: string;
+      mostly_clear: string;
+      partly_cloudy: string;
+      overcast: string;
+      fog: string;
+      drizzle: string;
+      rain: string;
+      heavy_rain: string;
+      snow: string;
+      showers: string;
+      thunderstorm: string;
+      variable: string;
+    };
+  };
   footer: {
     brand_name: string;
     copyright: string;
@@ -71,5 +116,6 @@ export type Dictionary = {
     rights: string;
     developedBy: string;
     nearest_cities: string;
+    navigation: string;
   };
 };

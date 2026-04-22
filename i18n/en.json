@@ -12,23 +12,147 @@
     "cta": "Book a Room"
   },
   "about": {
+    "section_label": "Health and Recreation Center",
     "title": "About Buloqboshi Sanatorium",
     "description": "Located at an altitude of 1,300 meters above sea level in the city of Angren. We offer clean mountain air, professional doctors, and over 40 types of procedures.",
     "sub_description": "A unique place combining treatment and relaxation. Ideal for restoring the body and strengthening health in a calm mountain atmosphere."
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Modern and effective procedures to restore your health.",
-    "diagnostics": "Diagnostics",
-    "diagnostics_desc": "Ultrasound, Cardiogram, Clinical Tests",
-    "treatment": "Treatments",
-    "treatment_desc": "Physiotherapy, Hydrotherapy, Massage",
-    "specialists": "Specialists",
-    "specialists_desc": "Cardiologist, Neurologist, Therapist",
-    "additional": "Additional Services",
-    "additional_desc": "Swimming Pool, Sauna, Mountain Walks"
+    "title": "Services",
+    "subtitle": "Our sanatorium is an ideal place not only for improving your health, but also for active recreation and new adventures. Here you can do the following activities:",
+    "items": [
+      {
+        "title": "Treatment - Strengthening Health",
+        "desc": "In our sanatorium, professional doctors offer more than 40 different procedures:",
+        "list": [
+          "Physiotherapy – treatment of the body with physiotherapy equipment",
+          "Phytotherapy – treatment using plant extracts",
+          "Hydrotherapy – mineral baths and shower procedures",
+          "Massages – relaxation of muscles and joints",
+          "Ultrasound and diagnostics – timely detection and prevention of diseases"
+        ],
+        "footer": "If you want to get rid of a specific disease or fatigue, effective health programs await you in our sanatorium!"
+      },
+      {
+        "title": "Relaxation - a quiet pastime among the mountains",
+        "desc": "\"Yangiobod Sanatorium\" is famous for its clean mountain air and offers guests a comfortable and relaxing holiday:",
+        "list": [
+          "Walking in nature – relief from stress and a boost of energy",
+          "Relaxing on the trestle beds – enjoying the clean air and sun rays",
+          "Sauna and swimming pool – a great place for physical and mental relaxation",
+          "Billiards and table tennis – fun with friends"
+        ],
+        "footer": "If you dream of escaping from the noise and enjoying the silence, our sanatorium is the perfect place for this!"
+      },
+      {
+        "title": "Nordic walking",
+        "desc": "Nordic walking is a step towards health. An excellent choice for those who want to have an active rest in nature!",
+        "list": [
+          "Increase physical activity and maintain a healthy lifestyle",
+          "Feeling of vigor and a surge of energy thanks to walks in the fresh air",
+          "Learning the correct walking technique from experienced instructors"
+        ],
+        "footer": "If you are looking for a healthy activity, do not miss this opportunity!"
+      },
+      {
+        "title": "Zipline - flight over the mountains",
+        "desc": "Our zipline attraction will give you unforgettable emotions of flying over natural landscapes:",
+        "list": [
+          "High-speed descent along a special cable",
+          "Breathtaking views of mountain landscapes from above",
+          "Safe and bright adventure"
+        ],
+        "footer": "Are you looking for thrills and unforgettable impressions? Then zipline is for you!"
+      },
+      {
+        "title": "Marathons - physical activity and sport",
+        "desc": "Marathons for sports enthusiasts are organized in \"Yangiobod Sanatorium\":",
+        "list": [
+          "Running on mountain trails – strengthening the body",
+          "Team sports marathons – active time with friends and new acquaintances",
+          "Discovery of new places and routes"
+        ],
+        "footer": "Do you love sports and want to direct your energy in the right direction? Join our marathons!"
+      },
+      {
+        "title": "Horseback riding - unforgettable moments in nature",
+        "desc": "Our resort offers horse riding services, which will allow you to fully enjoy nature:",
+        "list": [
+          "Horse riding under the guidance of experienced instructors",
+          "Walks among mountain landscapes",
+          "Spiritual and physical relaxation"
+        ],
+        "footer": "We invite you to restore energy and health at Buloqboshi Sanatorium."
+      }
+    ],
+    "top_activities_title": "TOP 3 activities by our guests",
+    "top_activities": [
+      {
+        "title": "Chinese Fire Massage",
+        "desc": "Chinese Fire Massage in \"Buloqboshi Sanatorium\" is a unique method of healing the body. This ancient therapy promotes deep body cleansing, restoration of energy balance, removal of toxins, muscle relaxation and improvement of blood circulation.",
+        "benefits_title": "Benefits:",
+        "benefits": [
+          "Effective fight against stress and fatigue",
+          "Reduction of muscle pain",
+          "Strengthening the immune system",
+          "Increasing skin elasticity"
+        ]
+      },
+      {
+        "title": "Hydromassage",
+        "desc": "Hydromassage in \"Buloqboshi Sanatorium\" is one of the most effective procedures for relaxing the body, improving blood circulation and softening muscle tissue. Treatment is carried out using special water flows.",
+        "benefits_title": "Benefits:",
+        "benefits": [
+          "Relaxation of muscles and reduction of pain",
+          "Improvement of blood circulation and lymphatic system",
+          "Relief from stress and fatigue",
+          "Increased skin elasticity and cell renewal"
+        ]
+      },
+      {
+        "title": "Cedar barrel",
+        "desc": "Cedar Barrel in Buloqboshi Sanatorium is a natural steam therapy for cleansing the body of toxins, strengthening the immune system and improving overall health. Mini-sauna made of natural cedar envelops the body in warm steam, stimulating the removal of harmful substances and accelerating metabolism.",
+        "benefits_title": "Benefits:",
+        "benefits": [
+          "Removal of toxins and harmful substances",
+          "Strengthening the immune system",
+          "Improving blood circulation",
+          "Reducing stress and fatigue",
+          "Normalizing weight and rejuvenating the skin"
+        ]
+      }
+    ],
+    "massage_services_title": "Massage services - for your health and well-being",
+    "massage_services_subtitle": "\"Buloqboshi Sanatorium\" offers professional massage services to restore the body, relax muscles and improve overall well-being. Each treatment is carried out individually and is recommended depending on your health condition.",
+    "massage_services": [
+      {
+        "title": "Chinese Fire Massage",
+        "desc": "Heat therapy helps restore energy balance, relax muscles and improve blood circulation. This ancient procedure revitalizes the body and helps eliminate toxins."
+      },
+      {
+        "title": "Hydromassage",
+        "desc": "The effect on the skin and muscle tissue using special water streams reduces stress, improves blood circulation and relieves fatigue."
+      },
+      {
+        "title": "Acupuncture",
+        "desc": "Impact on acupuncture points regulates the flow of energy in the body, improves the functioning of internal organs and reduces pain."
+      },
+      {
+        "title": "Hot Stone Massage",
+        "desc": "Deeply relaxes muscles with hot stones, helps relieve stress and gives a pleasant feeling of lightness."
+      },
+      {
+        "title": "Classic massage",
+        "desc": "The most recommended type of massage to improve muscle tone, relieve fatigue and improve overall health."
+      },
+      {
+        "title": "Manual therapy",
+        "desc": "Special techniques of manual manipulation of the spine and joints to improve mobility and reduce pain."
+      }
+    ]
   },
   "rooms": {
+    "section_label": "Comfort & Serenity",
     "title": "Our Rooms",
     "subtitle": "Comfortable and modern rooms for your rest.",
     "standard": "Standard Room",
@@ -51,6 +175,8 @@
     }
   },
   "contact": {
+    "section_label": "Reservations",
+    "section_title": "Want to visit?",
     "title": "Contact Us",
     "description": "Fill out the form and we will contact you shortly.",
     "form_name": "Name",
@@ -64,12 +190,43 @@
     "form_success": "Message sent successfully!",
     "form_error": "Error sending message. Please try again."
   },
+  "weather": {
+    "city": "Parkent, Tashkent",
+    "country": "Uzbekistan",
+    "updated": "Updated",
+    "unavailable_title": "Weather data is temporarily unavailable.",
+    "unavailable_message": "Please try again in a moment.",
+    "weekdays": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "conditions": {
+      "clear": "Clear sky",
+      "mostly_clear": "Mostly clear",
+      "partly_cloudy": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "heavy_rain": "Heavy rain",
+      "snow": "Snow",
+      "showers": "Rain showers",
+      "thunderstorm": "Thunderstorm",
+      "variable": "Variable weather"
+    }
+  },
   "footer": {
     "brand_name": "Buloqboshi Sanatorium",
     "copyright": "Buloqboshi Sanatorium.",
-    "address": "Tashkent region, Angren, Yangiobod territory (Buloqboshi)",
+    "address": "Parkent district, Tashkent region",
     "rights": "All rights reserved",
-    "developedBy": "Developed by [YourName]",
-    "nearest_cities": "Nearest cities"
+    "developedBy": "Developed by Stack",
+    "nearest_cities": "Nearest cities",
+    "navigation": "Navigation"
   }
 }

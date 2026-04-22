@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Instagram, Send } from 'lucide-react'; // Send for Telegram
+import { MapPin, Phone } from 'lucide-react';
 import { Dictionary } from '@/lib/types';
-import { Button } from '@/components/ui/button';
 
-export default function Footer({ dict }: { dict: Dictionary }) {
+export default function Footer({ dict, lang }: { dict: Dictionary, lang: string }) {
   const phoneNumbers = [
     "+998 99 483 70 00",
     "+998 50 020 33 00",
@@ -22,73 +21,81 @@ export default function Footer({ dict }: { dict: Dictionary }) {
   ];
 
   return (
-    <footer className="bg-slate-50 border-t mt-auto pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-background border-t border-border pt-20 pb-10">
+      <div className="container mx-auto px-6 md:px-12 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="Buloqboshi Logo" width={40} height={40} className="object-cover rounded-full" />
-              <h3 className="text-xl font-bold text-primary">{dict.footer.brand_name}</h3>
-            </div>
-            <p className="text-sm text-muted-foreground">
+          <div className="space-y-6 lg:col-span-4">
+            <Link href="/" className="inline-block relative group">
+              <div className="flex items-center space-x-4">
+                <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
+                  <Image src="/logo.png" alt="Buloqboshi Logo" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors tracking-tight">{dict.footer.brand_name}</h3>
+              </div>
+            </Link>
+            <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-sm">
              {dict.hero.subtitle}
             </p>
           </div>
 
           {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="font-semibold">{dict.nav.contact}</h4>
-            <div className="flex items-start space-x-2 text-sm text-muted-foreground">
-              <MapPin className="h-5 w-5 mt-0.5 shrink-0" />
-              <a 
-                href="https://www.google.com/maps?q=41.294752,69.686080" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                {dict.footer.address}
-              </a>
-            </div>
-            <div className="flex flex-col space-y-2">
-                {phoneNumbers.map((phone) => (
-                    <div key={phone} className="flex items-center space-x-2 text-sm text-muted-foreground">
-                        <Phone className="h-4 w-4" />
-                        <a href={`tel:${phone.replace(/\s/g, '')}`} className="hover:text-primary transition-colors">
-                            {phone}
-                        </a>
-                    </div>
-                ))}
-            </div>
+          <div className="space-y-6 lg:col-span-3">
+            <h4 className="text-base font-semibold tracking-wider uppercase text-foreground">{dict.nav.contact}</h4>
+            <ul className="space-y-4">
+              <li>
+                <a 
+                  href="https://www.google.com/maps?q=41.294752,69.686080" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group flex items-start space-x-3 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <MapPin className="h-5 w-5 mt-0.5 shrink-0 text-primary/70 group-hover:text-primary" />
+                  <span className="leading-relaxed">{dict.footer.address}</span>
+                </a>
+              </li>
+              {phoneNumbers.map((phone, idx) => (
+                <li key={idx}>
+                  <a href={`tel:${phone.replace(/\s/g, '')}`} className="group flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors">
+                    <Phone className="h-5 w-5 text-primary/70 group-hover:text-primary" />
+                    <span>{phone}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-             <h4 className="font-semibold">Quick Links</h4>
-             <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="#services" className="hover:text-primary transition-colors">{dict.nav.services}</Link></li>
-                <li><Link href="#rooms" className="hover:text-primary transition-colors">{dict.nav.rooms}</Link></li>
-                <li><Link href="#contact" className="hover:text-primary transition-colors">{dict.nav.contact}</Link></li>
+          <div className="space-y-6 lg:col-span-2 lg:pl-8">
+             <h4 className="text-base font-semibold tracking-wider uppercase text-foreground">{dict.footer.navigation}</h4>
+             <ul className="space-y-3">
+                <li><Link href={`/${lang}/about`} className="text-muted-foreground hover:text-primary hover:translate-x-1 inline-block transition-all">{dict.about.title}</Link></li>
+                <li><Link href={`/${lang}/services`} className="text-muted-foreground hover:text-primary hover:translate-x-1 inline-block transition-all">{dict.nav.services}</Link></li>
+                <li><Link href={`/${lang}/rooms`} className="text-muted-foreground hover:text-primary hover:translate-x-1 inline-block transition-all">{dict.nav.rooms}</Link></li>
+                <li><Link href={`/${lang}/contact`} className="text-muted-foreground hover:text-primary hover:translate-x-1 inline-block transition-all">{dict.nav.contact}</Link></li>
              </ul>
           </div>
 
           {/* Nearest Cities */}
-          <div className="space-y-4">
-             <h4 className="font-semibold">{dict.footer.nearest_cities}</h4>
-             <ul className="space-y-2 text-sm text-muted-foreground">
+          <div className="space-y-6 lg:col-span-3 lg:pl-8">
+             <h4 className="text-base font-semibold tracking-wider uppercase text-foreground">{dict.footer.nearest_cities}</h4>
+             <ul className="space-y-3">
                 {nearestCities.map((city) => (
-                  <li key={city.name} className="flex justify-between">
+                  <li key={city.name} className="flex justify-between items-center text-muted-foreground border-b border-border/40 pb-2 last:border-0 last:pb-0">
                     <span>{city.name}</span>
-                    <span className="text-primary font-medium">{city.distance}</span>
+                    <span className="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded-md">{city.distance}</span>
                   </li>
                 ))}
              </ul>
           </div>
         </div>
         
-        <div className="border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} {dict.footer.copyright} {dict.footer.rights}.</p>
+        <div className="border-t border-border/60 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-muted-foreground font-light text-center md:text-left">
+            &copy; {new Date().getFullYear()} {dict.footer.copyright} {dict.footer.rights}.
+          </p>
+
         </div>
       </div>
     </footer>

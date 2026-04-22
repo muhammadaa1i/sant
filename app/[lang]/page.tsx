@@ -12,11 +12,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   return (
     <div className="flex flex-col w-full">
-      <Hero dict={dict} />
-      <About dict={dict} />
-      <Services dict={dict} />
-      <Rooms dict={dict} />
-      <Contact dict={dict} />
+      <Hero dict={dict} lang={lang as Locale} />
     </div>
   );
 }

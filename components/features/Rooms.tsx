@@ -1,9 +1,9 @@
 import { Dictionary } from '@/lib/types';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import RoomCarousel from './RoomCarousel';
+import Link from 'next/link';
 
-export default function Rooms({ dict }: { dict: Dictionary }) {
+export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }) {
   const rooms = [
     {
       title: dict.rooms.standard,
@@ -28,36 +28,61 @@ export default function Rooms({ dict }: { dict: Dictionary }) {
   ];
 
   return (
-    <section id="rooms" className="py-20 bg-gradient-to-b from-background to-slate-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4" data-aos="fade-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">{dict.rooms.title}</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">{dict.rooms.subtitle}</p>
+    <section id="rooms" className="py-24 md:py-32 bg-slate-50 relative border-t border-border/50">
+      <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+        <div className="text-center mb-16 md:mb-24 space-y-6" data-aos="fade-up">
+          <h4 className="text-sm font-semibold tracking-wider text-primary uppercase">
+            {dict.rooms.section_label}
+          </h4>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">{dict.rooms.title}</h2>
+          <div className="w-16 h-1 bg-primary rounded-full mx-auto"></div>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light">
+            {dict.rooms.subtitle}
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="space-y-16 lg:space-y-24">
           {rooms.map((room, idx) => (
-            <Card key={idx} className="group flex flex-col overflow-hidden border-2 shadow-lg hover:shadow-2xl hover:border-primary/60 hover:-translate-y-1 transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay={idx * 200}>
-              <RoomCarousel images={room.images} roomName={room.title} placeholderText={dict.rooms.room_image} />
-              <CardHeader className="bg-gradient-to-r from-primary/5 to-secondary/5 pb-4">
-                <CardTitle className="text-2xl group-hover:text-primary transition-colors">{room.title}</CardTitle>
-                <CardDescription className="text-base">
-                  {dict.rooms.price_from} <span className="text-xl font-bold text-primary bg-primary/10 px-3 py-1 rounded-full inline-block mt-2">{room.price}</span> {dict.rooms.per_night}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow pt-6 pb-6">
-                <ul className="space-y-3">
+            <div 
+              key={idx} 
+              className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-center group`} 
+              data-aos="fade-up" 
+              data-aos-delay={idx * 150}
+            >
+              {/* Image Carousel Side */}
+              <div className="w-full lg:w-1/2 overflow-hidden rounded-[2.5rem] shadow-2xl relative ring-1 ring-border">
+                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+                <RoomCarousel images={room.images} roomName={room.title} placeholderText={dict.rooms.room_image} />
+              </div>
+              
+              {/* Details Side */}
+              <div className="w-full lg:w-1/2 space-y-6 lg:px-6">
+                <h3 className="text-3xl lg:text-4xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                  {room.title}
+                </h3>
+                <div className="text-lg text-muted-foreground flex items-baseline gap-2 pb-4 border-b border-border/60">
+                  <span>{dict.rooms.price_from}</span>
+                  <span className="text-3xl font-bold text-primary">{room.price}</span>
+                  <span>{dict.rooms.per_night}</span>
+                </div>
+                
+                <ul className="space-y-4 pt-4 mb-8">
                   {room.features.map((feature, i) => (
-                    <li key={i} className="flex items-center text-sm">
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-                        <Check className="h-4 w-4 text-primary" />
+                    <li key={i} className="flex items-center text-lg text-foreground/80 font-light">
+                      <div className="shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                        <Check className="h-4 w-4 text-primary" strokeWidth={2.5} />
                       </div>
-                      <span className="text-slate-700">{feature}</span>
+                      {feature}
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
+                
+                <Link href={`/${lang}/contact`} className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/30 w-full sm:w-auto hover:-translate-y-1">
+                  {dict.nav.book}
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
           ))}
         </div>
       </div>

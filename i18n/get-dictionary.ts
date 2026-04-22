@@ -13,7 +13,6 @@ export const getDictionary = async (locale: Locale) => {
     return dict;
   } catch (error) {
     console.error(`Failed to load dictionary for locale: ${locale}`, error);
-    // Fallback to English
     return await dictionaries['en']();
   }
 }

@@ -12,23 +12,147 @@
     "cta": "Xona Band Qilish"
   },
   "about": {
+    "section_label": "Sog'liqni tiklash va dam olish markazi",
     "title": "Buloqboshi Sanatoriyasi Haqida",
     "description": "Angren shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
     "sub_description": "Davolanish va dam olishni o'zida mujassam etgan noyob maskan. Tana va ruhni tiklash uchun ideal joy."
   },
   "services": {
-    "title": "Bizning Xizmatlar",
-    "subtitle": "Sog'lig'ingizni tiklash uchun zamonaviy va samarali muolajalar.",
-    "diagnostics": "Diagnostika",
-    "diagnostics_desc": "Ultratovush, Kardiogramma, Klinik tahlillar",
-    "treatment": "Muolajalar",
-    "treatment_desc": "Fizioterapiya, Gidroterapiya, Massaj",
-    "specialists": "Mutaxassislar",
-    "specialists_desc": "Kardiolog, Nevrolog, Terapevt",
-    "additional": "Qo'shimcha Xizmatlar",
-    "additional_desc": "Suzish havzasi, Sauna, Tog' sayrlar"
+    "title": "Xizmatlar",
+    "subtitle": "Bizning sanatoriymiz nafaqat salomatligingizni yaxshilash, balki faol dam olish va yangi sarguzashtlar uchun ideal joydir. Bu yerda siz quyidagi mashg'ulotlar bilan shug'ullanishingiz mumkin:",
+    "items": [
+      {
+        "title": "Davolanish - Salomatlikni mustahkamlash",
+        "desc": "Bizning sanatoriymizda professional shifokorlar 40 dan ortiq turli muolajalarni taklif qilishadi:",
+        "list": [
+          "Fizioterapiya – tana a'zolarini fizioterapiya uskunalari yordamida davolash",
+          "Fitoterapiya – o'simlik ekstraktlari yordamida davolash",
+          "Gidroterapiya – mineral vannalar va dush muolajalari",
+          "Massaj – mushaklar va bo'g'imlarni bo'shashtirish",
+          "UTT va diagnostika – kasalliklarni o'z vaqtida aniqlash va oldini olish"
+        ],
+        "footer": "Agar siz aniq bir kasallikdan yoki charchoqdan qutulmoqchi bo'lsangiz, sanatoriymizda sizni samarali sog'lomlashtirish dasturlari kutmoqda!"
+      },
+      {
+        "title": "Dam olish - tog'lar orasida tinch osoyishtalik",
+        "desc": "\"Yangiobod Sanatoriyasi\" toza tog' havosi bilan mashhur va mehmonlarga qulay va tasalli beruvchi dam olishni taklif etadi:",
+        "list": [
+          "Tabiat qo'ynida sayr qilish – stressdan xalos bo'lish va energiya olish",
+          "Tapchanlarda dam olish – toza havo va quyosh nurlaridan bahramand bo'lish",
+          "Sauna va basseyn – jismoniy va ruhiy dam olish uchun ajoyib joy",
+          "Bilyard va stol tennisi – do'stlar bilan maroqli vaqt"
+        ],
+        "footer": "Agar siz shovqindan qochish va jimlikdan bahramand bo'lishni orzu qilsangiz, bizning sanatoriymiz bu uchun ayni muddao!"
+      },
+      {
+        "title": "Skandinavcha yurish",
+        "desc": "Skandinavcha yurish – salomatlik sari qadam. Tabiat qo'ynida faol dam olishni xohlovchilar uchun ajoyib tanlov!",
+        "list": [
+          "Jismoniy faollikni oshirish va sog'lom turmush tarzini saqlash",
+          "Toza havoda sayr qilish tufayli tetiklik hissi va kuchga to'lish",
+          "Tajribali instruktorlardan to'g'ri yurish texnikasini o'rganish"
+        ],
+        "footer": "Agar siz sog'lom mashg'ulot izlayotgan bo'lsangiz, bu imkoniyatni qo'ldan boy bermang!"
+      },
+      {
+        "title": "Zipline - tog'lar uzra parvoz",
+        "desc": "Bizning zipline attraksionimiz sizga tabiiy landshaftlar ustida parvoz qilishning unutilmas his-tuyg'ularini hadya etadi:",
+        "list": [
+          "Maxsus kabel bo'ylab yuqori tezlikda tushish",
+          "Yuqoridan tog' landshaftlarining hayratlanarli manzaralari",
+          "Xavfsiz va yorqin sarguzasht"
+        ],
+        "footer": "Siz kuchli hayajon va unutilmas taassurotlar qidiryapsizmi? Unda zipline aynan siz uchun!"
+      },
+      {
+        "title": "Marafonlar - jismoniy faollik va sport",
+        "desc": "\"Yangiobod Sanatoriyasi\"da sport ixlosmandlari uchun marafonlar tashkil etiladi:",
+        "list": [
+          "Tog' yo'llarida yugurish – tanani chiniqtirish",
+          "Jamoaviy sport marafonlari – do'stlar va yangi tanishlar bilan faol vaqt o'tkazish",
+          "Yangi joylar va yo'nalishlarni kashf etish"
+        ],
+        "footer": "Siz sportni yaxshi ko'rasizmi va kuchingizni to'g'ri yo'naltirishni xohlaysizmi? Bizning marafonlarimizga qo'shiling!"
+      },
+      {
+        "title": "Ot minish - tabiat qo'ynida unutilmas lahzalar",
+        "desc": "Bizning maskanimiz tabiatdan to'liq bahramand bo'lish imkonini beruvchi ot minish xizmatlarini taklif etadi:",
+        "list": [
+          "Tajribali instruktorlar boshchiligida ot minish",
+          "Tog' landshaftlari orasida sayr qilish",
+          "Ruhiy va jismoniy hordiq chiqarish"
+        ],
+        "footer": "Sizni Buloqboshi sanatoriysida kuch va sog'ligingizni tiklashga taklif qilamiz."
+      }
+    ],
+    "top_activities_title": "Mehmonlarimiz tomonidan eng ko'p tanlanadigan 3 ta muolaja",
+    "top_activities": [
+      {
+        "title": "Xitoy olov massaji",
+        "desc": "\"Buloqboshi Sanatoriyasi\"dagi Xitoy olov massaji tanani sog'lomlashtirishning o'ziga xos usulidir. Ushbu qadimiy terapiya tanani chuqur tozalash, energiya muvozanatini tiklash, toksinlarni olib tashlash, mushaklarni bo'shashtirish va qon aylanishini yaxshilashga yordam beradi.",
+        "benefits_title": "Afzalliklari:",
+        "benefits": [
+          "Stress va charchoqqa qarshi samarali kurash",
+          "Mushak og'rig'ini kamaytirish",
+          "Immunitet tizimini mustahkamlash",
+          "Teri elastikligini oshirish"
+        ]
+      },
+      {
+        "title": "Gidromassaj",
+        "desc": "\"Buloqboshi Sanatoriyasi\"dagi gidromassaj tanani bo'shashtirish, qon aylanishini yaxshilash va mushak to'qimalarini yumshatish uchun eng samarali muolajalardan biridir. Davolash maxsus suv oqimlari yordamida amalga oshiriladi.",
+        "benefits_title": "Afzalliklari:",
+        "benefits": [
+          "Mushaklarni bo'shashtirish va og'riqni kamaytirish",
+          "Qon aylanishi va limfa tizimini yaxshilash",
+          "Stress va charchoqdan xalos bo'lish",
+          "Teri elastikligining oshishi va hujayralarning yangilanishi"
+        ]
+      },
+      {
+        "title": "Kedr bochkasi",
+        "desc": "Buloqboshi sanatoriysidagi Kedr bochkasi - bu tanani toksinlardan tozalash, immunitetni mustahkamlash va umumiy salomatlikni yaxshilash uchun tabiiy bug'li terapiya. Tabiiy kedrdan tayyorlangan mini-sauna tanani issiq bug' bilan qoplab, zararli moddalarni chiqarib tashlashni rag'batlantiradi va metabolizmni tezlashtiradi.",
+        "benefits_title": "Afzalliklari:",
+        "benefits": [
+          "Toksinlar va zararli moddalarni olib tashlash",
+          "Immunitet tizimini mustahkamlash",
+          "Qon aylanishini yaxshilash",
+          "Stress va charchoqni kamaytirish",
+          "Vaznni normallashtirish va terini yoshartirish"
+        ]
+      }
+    ],
+    "massage_services_title": "Massaj xizmatlari - sizning salomatligingiz va farovonligingiz uchun",
+    "massage_services_subtitle": "\"Buloqboshi sanatoriysi\" tanani tiklash, mushaklarni bo'shashtirish va umumiy farovonlikni yaxshilash uchun professional massaj xizmatlarini taklif etadi. Har bir muolaja individual tarzda amalga oshiriladi va sog'lig'ingiz holatiga qarab tavsiya etiladi.",
+    "massage_services": [
+      {
+        "title": "Xitoy olov massaji",
+        "desc": "Issiqlik terapiyasi energiya balansini tiklashga, mushaklarni bo'shashtirishga va qon aylanishini yaxshilashga yordam beradi. Ushbu qadimiy protsedura tanani yoshartiradi va toksinlarni yo'q qilishga yordam beradi."
+      },
+      {
+        "title": "Gidromassaj",
+        "desc": "Maxsus suv oqimlari yordamida teri va mushak to'qimalariga ta'sir qilish stressni kamaytiradi, qon aylanishini yaxshilaydi va charchoqni ketkazadi."
+      },
+      {
+        "title": "Akupunktura (Igna sanchish)",
+        "desc": "Akupunktur nuqtalariga ta'sir qilish tanadagi energiya oqimini tartibga soladi, ichki organlarning faoliyatini yaxshilaydi va og'riqni kamaytiradi."
+      },
+      {
+        "title": "Issiq toshli massaj (Stoun-terapiya)",
+        "desc": "Issiq toshlar yordamida mushaklarni chuqur bo'shashtiradi, stressni engillashtirishga yordam beradi va yoqimli yengillik hissi beradi."
+      },
+      {
+        "title": "Klassik massaj",
+        "desc": "Mushaklar tonusini yaxshilash, charchoqni ketkazish va umumiy salomatlikni yaxshilash uchun eng ko'p tavsiya etilgan massaj turi."
+      },
+      {
+        "title": "Manual terapiya",
+        "desc": "Harakatchanlikni yaxshilash va og'riqni kamaytirish uchun umurtqa pog'onasi va bo'g'imlarni qo'lda manipulyatsiya qilishning maxsus usullari."
+      }
+    ]
   },
   "rooms": {
+    "section_label": "Qulaylik va tinchlik",
     "title": "Bizning Xonalar",
     "subtitle": "Sizning dam olishingiz uchun qulay va zamonaviy xonalar.",
     "standard": "Standart Xona",
@@ -47,10 +171,12 @@
       "family_friendly": "Oila uchun qulay",
       "private_area": "Shaxsiy hudud",
       "kitchen": "Oshxona",
-      "all_inclusive": "All inclusive"
+      "all_inclusive": "Hamma narsa kiritilgan"
     }
   },
   "contact": {
+    "section_label": "Bron qilish",
+    "section_title": "Tashrif buyurishni xohlaysizmi?",
     "title": "Biz Bilan Aloqa",
     "description": "Formani to'ldiring va biz siz bilan tez orada bog'lanamiz.",
     "form_name": "Ismingiz",
@@ -64,12 +190,43 @@
     "form_success": "Xabar muvaffaqiyatli yuborildi!",
     "form_error": "Xabar yuborishda xatolik. Iltimos, qayta urinib ko'ring."
   },
+  "weather": {
+    "city": "Parkent, Toshkent",
+    "country": "O'zbekiston",
+    "updated": "Yangilandi",
+    "unavailable_title": "Ob-havo ma'lumotlari hozircha mavjud emas.",
+    "unavailable_message": "Iltimos, birozdan so'ng qayta urinib ko'ring.",
+    "weekdays": {
+      "mon": "Du",
+      "tue": "Se",
+      "wed": "Cho",
+      "thu": "Pay",
+      "fri": "Ju",
+      "sat": "Sha",
+      "sun": "Yak"
+    },
+    "conditions": {
+      "clear": "Musaffo osmon",
+      "mostly_clear": "Asosan ochiq",
+      "partly_cloudy": "Qisman bulutli",
+      "overcast": "Bulutli",
+      "fog": "Tuman",
+      "drizzle": "Mayin yomg'ir",
+      "rain": "Yomg'ir",
+      "heavy_rain": "Kuchli yomg'ir",
+      "snow": "Qor",
+      "showers": "Jala yomg'ir",
+      "thunderstorm": "Momaqaldiroq",
+      "variable": "O'zgaruvchan ob-havo"
+    }
+  },
   "footer": {
     "brand_name": "Buloqboshi Sanatoriyasi",
     "copyright": "Buloqboshi Sanatoriyasi.",
-    "address": "Toshkent viloyati, Angren shahri, Yangiobod hududi (Buloqboshi)",
+    "address": "Toshkent viloyati, Parkent tumani",
     "rights": "Barcha huquqlar himoyalangan",
-    "developedBy": "Dasturchi: [Ismingiz]",
-    "nearest_cities": "Yaqin shaharlar"
+    "developedBy": "Dasturchi: Stack",
+    "nearest_cities": "Yaqin shaharlar",
+    "navigation": "Sahifalar"
   }
 }

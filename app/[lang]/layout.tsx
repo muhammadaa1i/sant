@@ -72,10 +72,10 @@ export default async function RootLayout({
             >
                 <AOSInit />
                 <Navbar dict={dict} lang={lang} />
-                <main className="flex-grow">
+                <main className="grow">
                     {children}
                 </main>
-                <Footer dict={dict} />
+                <Footer dict={dict} lang={lang} />
             </body>
         </html>
     );
