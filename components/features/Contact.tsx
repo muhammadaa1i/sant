@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 
-export default function Contact({ dict, lang }: { dict: Dictionary, lang: string }) {
+export default function Contact({ dict }: { dict: Dictionary }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',

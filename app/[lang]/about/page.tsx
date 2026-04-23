@@ -8,7 +8,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
 
   return (
     <div className="flex flex-col w-full pt-16">
-      <About dict={dict} lang={lang} />
+      <About dict={dict} />
     </div>
   );
 }

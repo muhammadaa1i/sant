@@ -109,6 +109,28 @@ export type Dictionary = {
       variable: string;
     };
   };
+  chatbot: {
+    bubble_label: string;
+    header_title: string;
+    header_subtitle: string;
+    greeting: string;
+    placeholder: string;
+    send: string;
+    quick_ask: string;
+    quick_questions: {
+      prices: string;
+      booking: string;
+      treatments: string;
+      location: string;
+    };
+    answers: {
+      prices: string;
+      booking: string;
+      treatments: string;
+      location: string;
+      fallback: string;
+    };
+  };
   footer: {
     brand_name: string;
     copyright: string;

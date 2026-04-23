@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import '../globals.css';
+import "./globals.css";
 import { i18n, Locale } from "../../i18n/settings";
 import { getDictionary } from "../../i18n/get-dictionary";
 import Navbar from "@/components/features/Navbar";
 import Footer from "@/components/features/Footer";
-import AOSInit from "@/components/AOSInit";
+import ClientEnhancements from "@/components/ClientEnhancements";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -70,11 +70,11 @@ export default async function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground flex flex-col min-h-screen`}
             >
-                <AOSInit />
                 <Navbar dict={dict} lang={lang} />
                 <main className="grow">
                     {children}
                 </main>
+                <ClientEnhancements chatbotDict={dict.chatbot} lang={lang} />
                 <Footer dict={dict} lang={lang} />
             </body>
         </html>

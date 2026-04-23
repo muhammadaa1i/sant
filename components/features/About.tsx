@@ -1,8 +1,7 @@
 import { Dictionary } from '@/lib/types';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
-export default function About({ dict, lang }: { dict: Dictionary, lang: string }) {
+export default function About({ dict }: { dict: Dictionary }) {
   return (
     <section id="about" className="py-24 md:py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">

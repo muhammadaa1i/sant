@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { Menu, X, Instagram, Send, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -13,9 +12,6 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  const pathname = usePathname();
-  
-  const isHomePage = pathname === `/${lang}` || pathname === `/${lang}/`;
   const isSolid = scrolled;
 
   useEffect(() => {

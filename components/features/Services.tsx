@@ -2,7 +2,7 @@ import { Dictionary } from '@/lib/types';
 import Image from 'next/image';
 import { Check, Flame, Droplet, Activity, Flower2, User, Hand } from 'lucide-react';
 
-export default function Services({ dict, lang }: { dict: Dictionary, lang: string }) {
+export default function Services({ dict }: { dict: Dictionary }) {
   const images = [
     '/services/image.png',
     '/services/image copy.png',

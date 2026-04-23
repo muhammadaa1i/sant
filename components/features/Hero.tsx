@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Dictionary } from '@/lib/types';
 import { Locale } from '@/i18n/settings';
-import ParkentWeather from './ParkentWeather';
+import HeroWeather from './HeroWeather';
 
 export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   return (
@@ -42,7 +42,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
 
         {/* Right Side: Dynamic Parkent Weather */}
         <div className="w-full max-w-xs sm:max-w-sm lg:max-w-sm mx-auto lg:mx-0" data-aos="fade-left" data-aos-delay="400">
-          <ParkentWeather lang={lang} weatherDict={dict.weather} />
+          <HeroWeather lang={lang} weatherDict={dict.weather} />
         </div>
       </div>
     </section>

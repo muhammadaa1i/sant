@@ -1,7 +1,7 @@
 import { Dictionary } from '@/lib/types';
-import { Check, ArrowRight } from 'lucide-react';
-import RoomCarousel from './RoomCarousel';
 import Link from 'next/link';
+import { Check, ArrowRight } from 'lucide-react';
+import RoomCarouselLazy from './RoomCarouselLazy';
 
 export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }) {
   const rooms = [
@@ -52,7 +52,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
               {/* Image Carousel Side */}
               <div className="w-full lg:w-1/2 overflow-hidden rounded-[2.5rem] shadow-2xl relative ring-1 ring-border">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-                <RoomCarousel images={room.images} roomName={room.title} placeholderText={dict.rooms.room_image} />
+                <RoomCarouselLazy images={room.images} roomName={room.title} placeholderText={dict.rooms.room_image} />
               </div>
               
               {/* Details Side */}

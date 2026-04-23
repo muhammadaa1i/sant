@@ -220,6 +220,28 @@
       "variable": "O'zgaruvchan ob-havo"
     }
   },
+  "chatbot": {
+    "bubble_label": "Savolingiz bormi?",
+    "header_title": "Buloqboshi yordamchi",
+    "header_subtitle": "Onlayn",
+    "greeting": "Salom! Savollaringiz bormi? Bron, narxlar, muolajalar va manzil bo'yicha yordam beraman.",
+    "placeholder": "Savolingizni yozing...",
+    "send": "Yuborish",
+    "quick_ask": "Tezkor savollar",
+    "quick_questions": {
+      "prices": "Xona narxlari",
+      "booking": "Qanday band qilaman?",
+      "treatments": "Qanday muolajalar bor?",
+      "location": "Qayerda joylashgansiz?"
+    },
+    "answers": {
+      "prices": "Xona narxlari mavsum va xona turiga qarab o'zgaradi. Sanalarni yuboring, sizga eng mos variantni tanlab beramiz.",
+      "booking": "Yuqoridagi band qilish tugmasi yoki aloqa formasi orqali bron qilishingiz mumkin. Tez orada siz bilan bog'lanamiz.",
+      "treatments": "Bizda diagnostika, fizioterapiya, gidroterapiya, massaj va mutaxassislar konsultatsiyasi mavjud.",
+      "location": "Biz Toshkent viloyati, Parkent tumani, Buloqboshi tog' hududida joylashganmiz.",
+      "fallback": "Ajoyib savol. Kontakt formaga telefon raqamingizni qoldiring, jamoamiz sizga batafsil javob beradi."
+    }
+  },
   "footer": {
     "brand_name": "Buloqboshi Sanatoriyasi",
     "copyright": "Buloqboshi Sanatoriyasi.",

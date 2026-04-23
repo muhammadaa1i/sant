@@ -220,6 +220,28 @@
       "variable": "Variable weather"
     }
   },
+  "chatbot": {
+    "bubble_label": "Any questions?",
+    "header_title": "Buloqboshi Assistant",
+    "header_subtitle": "Online now",
+    "greeting": "Hi! Do you have any questions? I can help with booking, prices, treatments, and location.",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "quick_ask": "Quick questions",
+    "quick_questions": {
+      "prices": "Room prices",
+      "booking": "How to book?",
+      "treatments": "Available treatments",
+      "location": "Where are you located?"
+    },
+    "answers": {
+      "prices": "Room prices depend on season and room type. Share your preferred dates and we will help you choose the best option.",
+      "booking": "You can book from the top button or by leaving your contact details in the form section. We will confirm shortly.",
+      "treatments": "We provide diagnostics, physiotherapy, hydrotherapy, massage, and specialist consultations.",
+      "location": "We are in the Tashkent region, Parkent district, mountain area of Buloqboshi.",
+      "fallback": "Great question. Please leave your phone number in the contact form and our team will reply with full details."
+    }
+  },
   "footer": {
     "brand_name": "Buloqboshi Sanatorium",
     "copyright": "Buloqboshi Sanatorium.",
