@@ -17,6 +17,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
           <span 
             className="text-white/90 font-semibold tracking-widest uppercase text-sm md:text-base mb-4 drop-shadow-sm" 
             data-aos="fade-in"
+            suppressHydrationWarning
           >
             {dict.hero.title}
           </span>
@@ -24,10 +25,11 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
             className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8 drop-shadow-lg" 
             data-aos="fade-up" 
             data-aos-delay="100"
+            suppressHydrationWarning
           >
             {dict.hero.subtitle}
           </h1>
-          <div data-aos="fade-up" data-aos-delay="300">
+          <div data-aos="fade-up" data-aos-delay="300" suppressHydrationWarning>
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md px-8 py-6 text-lg font-semibold tracking-wide shadow-xl transition-transform hover:scale-105 border-none capitalize" 
@@ -41,7 +43,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
         </div>
 
         {/* Right Side: Dynamic Parkent Weather */}
-        <div className="w-full max-w-xs sm:max-w-sm lg:max-w-sm mx-auto lg:mx-0" data-aos="fade-left" data-aos-delay="400">
+        <div className="w-full max-w-xs sm:max-w-sm lg:max-w-sm mx-auto lg:mx-0" data-aos="fade-left" data-aos-delay="400" suppressHydrationWarning>
           <HeroWeather lang={lang} weatherDict={dict.weather} />
         </div>
       </div>

@@ -66,7 +66,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
   return (
     <section id="rooms" className="py-20 md:py-24 bg-background relative border-t border-border/40">
       <div className="container mx-auto px-4 md:px-6 max-w-440">
-        <div className="text-center mb-12 md:mb-16 space-y-5" data-aos="fade-up">
+        <div className="text-center mb-12 md:mb-16 space-y-5" data-aos="fade-up" suppressHydrationWarning>
           <h4 className="text-xs md:text-sm font-semibold tracking-[0.2em] text-primary uppercase">
             {dict.rooms.section_label}
           </h4>
@@ -84,6 +84,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
               className="group relative overflow-hidden h-[430px] sm:h-[500px] ring-1 ring-black/10"
               data-aos="fade-up"
               data-aos-delay={idx * 120}
+              suppressHydrationWarning
             >
               <Image
                 src={room.image}
@@ -148,7 +149,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center" data-aos="fade-up" data-aos-delay="220">
+        <div className="mt-10 flex justify-center" data-aos="fade-up" data-aos-delay="220" suppressHydrationWarning>
           <Link
             href={`/${lang}/contact`}
             className="inline-flex items-center justify-center gap-2 border border-primary/50 px-10 py-3.5 rounded-md text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors min-w-[280px]"

@@ -95,7 +95,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
               <span className="text-xl font-bold tracking-widest uppercase drop-shadow-sm">Buloqboshi</span>
             </a>
             <a href="#" className="flex md:hidden items-center gap-2">
-               <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" priority />
+               <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" priority sizes="40px" />
             </a>
           </div>
 
@@ -129,7 +129,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-6">
           <a href="#" className="flex flex-col items-center gap-2 pl-4" onClick={() => setIsOpen(false)}>
-            <Image src="/logo.png" alt="Logo" width={56} height={56} className="rounded-full object-cover shadow-sm" />
+            <Image src="/logo.png" alt="Logo" width={56} height={56} className="rounded-full object-cover shadow-sm" sizes="56px" />
             <span className="text-sm font-bold tracking-widest text-primary uppercase text-center">
               Buloqboshi<br/>Sanatoriyasi
             </span>

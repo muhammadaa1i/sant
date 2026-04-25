@@ -30,7 +30,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
   return (
     <section id="services" className="py-24 md:py-32 bg-[#F9F9F8] relative">
       <div className="container mx-auto px-6 md:px-12 max-w-6xl">
-        <div className="text-center mb-16 space-y-6" data-aos="fade-up">
+        <div className="text-center mb-16 space-y-6" data-aos="fade-up" suppressHydrationWarning>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-[1.1]">
             {dict.services.title}
           </h2>
@@ -45,6 +45,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
               key={idx} 
               className="group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500"
               data-aos="fade-up" 
+              suppressHydrationWarning
             >
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section */}
@@ -92,16 +93,17 @@ export default function Services({ dict }: { dict: Dictionary }) {
         {/* TOP 3 Activities Section */}
         {dict.services.top_activities && dict.services.top_activities.length > 0 && (
           <div className="mt-32">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12" data-aos="fade-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12" data-aos="fade-up" suppressHydrationWarning>
               {dict.services.top_activities_title}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {dict.services.top_activities.map((activity, idx) => (
                 <div 
                   key={idx} 
-                  className="bg-white rounded-2xl md:rounded-3xl overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-all duration-300"
+                  className="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100/50"
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
+                  suppressHydrationWarning
                 >
                   <div className="relative h-56 w-full shrink-0">
                     <Image
@@ -140,7 +142,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
         {/* Massage Services Section */}
         {dict.services.massage_services && dict.services.massage_services.length > 0 && (
           <div className="mt-32">
-            <div className="text-center mb-16 space-y-4" data-aos="fade-up">
+            <div className="text-center mb-16 space-y-4" data-aos="fade-up" suppressHydrationWarning>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
                 {dict.services.massage_services_title}
               </h2>
@@ -158,6 +160,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                     className="bg-white rounded-2xl md:rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100/50"
                     data-aos="fade-up"
                     data-aos-delay={idx * 100}
+                    suppressHydrationWarning
                   >
                     <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
                       <Icon strokeWidth={1.5} className="w-8 h-8" />

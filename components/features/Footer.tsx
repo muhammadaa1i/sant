@@ -30,7 +30,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary, lang: string 
             <Link href="/" className="inline-block relative group">
               <div className="flex items-center space-x-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/logo.png" alt="Buloqboshi Logo" fill className="object-cover" />
+                  <Image src="/logo.png" alt="Buloqboshi Logo" fill className="object-cover" sizes="64px" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors tracking-tight">{dict.footer.brand_name}</h3>
               </div>

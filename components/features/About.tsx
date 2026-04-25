@@ -7,7 +7,7 @@ export default function About({ dict }: { dict: Dictionary }) {
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Text Content */}
-          <div className="space-y-8 relative z-10" data-aos="fade-right">
+          <div className="space-y-8 relative z-10" data-aos="fade-right" suppressHydrationWarning>
             <h4 className="text-primary font-semibold tracking-wider uppercase text-sm">
               {dict.about.section_label}
             </h4>
@@ -31,7 +31,7 @@ export default function About({ dict }: { dict: Dictionary }) {
           </div>
 
           {/* Video / Visual Anchor */}
-          <div className="relative group" data-aos="fade-left" data-aos-delay="150">
+          <div className="relative group" data-aos="fade-left" data-aos-delay="150" suppressHydrationWarning>
             <div className="absolute -inset-1 bg-primary/10 rounded-[2.5rem] transform rotate-3 scale-105 transition-transform group-hover:rotate-6 duration-700"></div>
             <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl bg-black ring-1 ring-black/5 flex items-center justify-center">
               <video
