@@ -86,16 +86,13 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
               data-aos-delay={idx * 120}
               suppressHydrationWarning
             >
-              <div className="absolute inset-0 bg-muted animate-shimmer-fast overflow-hidden">
-                <Image
-                  src={room.image}
-                  alt={room.title}
-                  fill
-                  className="object-cover transition-all duration-1000 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                  loading="lazy"
-                />
-              </div>
+              <Image
+                src={room.image}
+                alt={room.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+              />
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
 
 

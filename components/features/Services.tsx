@@ -49,19 +49,18 @@ export default function Services({ dict }: { dict: Dictionary }) {
             >
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section */}
-                <div className="w-full md:w-1/2 relative h-64 sm:h-80 md:h-auto min-h-[300px] bg-muted animate-shimmer-fast overflow-hidden">
+                <div className="w-full md:w-[45%] lg:w-[40%] relative h-64 sm:h-80 md:h-auto min-h-[300px]">
                   <Image
                     src={images[idx]}
                     alt={service.title}
                     fill
-                    className="object-cover transition-opacity duration-700"
+                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                    loading="lazy"
                   />
                 </div>
                 
                 {/* Content Section */}
-                <div className="w-full md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+                <div className="w-full md:w-[55%] lg:w-[60%] p-8 lg:p-12 flex flex-col justify-center">
                   <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-foreground">
                     {service.title}
                   </h3>
@@ -106,14 +105,13 @@ export default function Services({ dict }: { dict: Dictionary }) {
                   data-aos-delay={idx * 100}
                   suppressHydrationWarning
                 >
-                  <div className="relative h-56 w-full shrink-0 bg-muted animate-shimmer-fast overflow-hidden">
+                  <div className="relative h-56 w-full shrink-0">
                     <Image
                       src={activityImages[idx]}
                       alt={activity.title}
                       fill
-                      className="object-cover transition-opacity duration-700"
+                      className="object-cover"
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 bg-primary text-primary-foreground px-6 py-2.5 text-sm md:text-base font-medium rounded-tr-xl">
                       {activity.title}
