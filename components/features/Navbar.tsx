@@ -44,13 +44,13 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
 
   return (
     <>
-      <nav className={`fixed top-0 z-40 w-full transition-all duration-300 ${isSolid ? 'bg-white shadow-md py-2 text-slate-800' : 'bg-transparent py-3 text-white'}`}>
+      <nav className="fixed top-0 z-40 w-full bg-white/95 backdrop-blur-md shadow-sm py-2 text-slate-800 transition-all duration-300">
         <div className="container mx-auto px-6 max-w-7xl grid grid-cols-[1fr_auto_1fr] items-center gap-4">
 
           {/* Left: Menu Icon + Section Links */}
           <div className="flex items-center justify-start gap-4 min-w-0">
             <button
-              className="p-2 rounded-full hover:bg-black/10 transition-colors"
+              className="p-2 rounded-full hover:bg-black/5 transition-colors"
               onClick={() => setIsOpen(true)}
               aria-label="Open menu"
             >
@@ -69,7 +69,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
                     className={`text-sm font-semibold tracking-wide uppercase transition-all whitespace-nowrap cursor-pointer ${
                       isActive 
                         ? 'text-primary drop-shadow-sm scale-105 underline underline-offset-4 decoration-2' 
-                        : 'hover:opacity-70'
+                        : 'hover:text-primary'
                     }`}
                   >
                     {link.label}
@@ -83,18 +83,25 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
           <div className="flex items-center justify-center">
             <a href="#" className="hidden md:flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-full drop-shadow-md">
-                <Image src="/logo.png" alt="Buloqboshi Logo" fill className="object-cover" />
+                <Image 
+                  src="/logo.png" 
+                  alt="Buloqboshi Logo" 
+                  fill 
+                  className="object-cover"
+                  priority
+                  sizes="48px"
+                />
               </div>
               <span className="text-xl font-bold tracking-widest uppercase drop-shadow-sm">Buloqboshi</span>
             </a>
             <a href="#" className="flex md:hidden items-center gap-2">
-               <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" />
+               <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" priority />
             </a>
           </div>
 
           {/* Right: Language & Booking */}
           <div className="flex items-center justify-end gap-4">
-            <div className={`hidden md:block ${isSolid ? 'text-slate-800' : 'text-white'}`}>
+            <div className="hidden md:block text-slate-800">
               <LanguageSwitcher />
             </div>
             <Button 
@@ -164,11 +171,31 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
         </div>
 
         {/* Sidebar Footer */}
-        <div className="p-8 flex gap-6 text-primary">
-          <a href="#" className="hover:opacity-70 transition-opacity"><Instagram className="w-6 h-6" /></a>
-          <a href="#" className="hover:opacity-70 transition-opacity"><Send className="w-6 h-6" /></a>
-          <a href="#" className="hover:opacity-70 transition-opacity"><Facebook className="w-6 h-6" /></a>
-          <a href="#" className="hover:opacity-70 transition-opacity"><Youtube className="w-6 h-6" /></a>
+        <div className="p-8 flex gap-6">
+          <a 
+            href="https://www.instagram.com/buloqboshi_sanatoriyasi1/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
+          <a 
+            href="https://t.me/buloqboshisanotoriya" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
+          >
+            <Send className="w-6 h-6" />
+          </a>
+          <a 
+            href="https://www.youtube.com/@Buloqboshisanatoriyasi" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
+          >
+            <Youtube className="w-6 h-6" />
+          </a>
         </div>
       </div>
     </>

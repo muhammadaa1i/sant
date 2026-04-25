@@ -76,3 +76,27 @@
     color: var(--color-foreground);
   }
 }
+
+@keyframes pulse-premium {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 184, 212, 0);
+  }
+  50% { 
+    transform: scale(1.35);
+    box-shadow: 0 0 20px 8px rgba(0, 184, 212, 0.35);
+  }
+}
+
+.animate-pulse-premium {
+  animation: pulse-premium 0.7s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}

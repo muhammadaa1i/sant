@@ -5,6 +5,7 @@ import About from "@/components/features/About";
 import Services from "@/components/features/Services";
 import Rooms from "@/components/features/Rooms";
 import Contact from "@/components/features/Contact";
+import MapSection from "@/components/features/MapSection";
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -17,6 +18,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <Services dict={dict} />
       <Rooms dict={dict} lang={lang} />
       <Contact dict={dict} />
+      <MapSection dict={dict} />
     </div>
   );
 }

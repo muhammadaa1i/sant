@@ -9,7 +9,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
     '/services/image copy 2.png',
     '/services/image copy 3.png',
     '/services/image copy 4.png',
-    '/services/image copy 5.png'
+    '/services/eco_tours.png'
   ];
 
   const activityImages = [
@@ -54,6 +54,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                     alt={service.title}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                   />
                 </div>
                 
@@ -62,9 +63,11 @@ export default function Services({ dict }: { dict: Dictionary }) {
                   <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-foreground">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed mb-6">
-                    {service.desc}
-                  </p>
+                  {service.desc && (
+                    <p className="text-muted-foreground text-sm lg:text-base leading-relaxed mb-6">
+                      {service.desc}
+                    </p>
+                  )}
                   
                   <ul className="space-y-3 mb-6">
                     {service.list.map((item, i) => (
@@ -106,6 +109,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                       alt={activity.title}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                     <div className="absolute bottom-0 left-0 bg-primary text-primary-foreground px-6 py-2.5 text-sm md:text-base font-medium rounded-tr-xl">
                       {activity.title}

@@ -66,6 +66,8 @@ export type Dictionary = {
   contact: {
     section_label: string;
     section_title: string;
+    map_title: string;
+    view_on_google_maps: string;
     title: string;
     description: string;
     form_name: string;

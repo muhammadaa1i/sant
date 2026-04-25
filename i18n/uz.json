@@ -14,7 +14,7 @@
   "about": {
     "section_label": "Sog'liqni tiklash va dam olish markazi",
     "title": "Buloqboshi Sanatoriyasi Haqida",
-    "description": "Angren shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
+    "description": "Parkent shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
     "sub_description": "Davolanish va dam olishni o'zida mujassam etgan noyob maskan. Tana va ruhni tiklash uchun ideal joy."
   },
   "services": {
@@ -35,7 +35,7 @@
       },
       {
         "title": "Dam olish - tog'lar orasida tinch osoyishtalik",
-        "desc": "\"Yangiobod Sanatoriyasi\" toza tog' havosi bilan mashhur va mehmonlarga qulay va tasalli beruvchi dam olishni taklif etadi:",
+        "desc": "\"Buloqboshi Sanatoriyasi\" toza tog' havosi bilan mashhur va mehmonlarga qulay va tasalli beruvchi dam olishni taklif etadi:",
         "list": [
           "Tabiat qo'ynida sayr qilish – stressdan xalos bo'lish va energiya olish",
           "Tapchanlarda dam olish – toza havo va quyosh nurlaridan bahramand bo'lish",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Marafonlar - jismoniy faollik va sport",
-        "desc": "\"Yangiobod Sanatoriyasi\"da sport ixlosmandlari uchun marafonlar tashkil etiladi:",
+        "desc": "\"Buloqboshi Sanatoriyasi\"da sport ixlosmandlari uchun marafonlar tashkil etiladi:",
         "list": [
           "Tog' yo'llarida yugurish – tanani chiniqtirish",
           "Jamoaviy sport marafonlari – do'stlar va yangi tanishlar bilan faol vaqt o'tkazish",
@@ -75,27 +75,28 @@
         "footer": "Siz sportni yaxshi ko'rasizmi va kuchingizni to'g'ri yo'naltirishni xohlaysizmi? Bizning marafonlarimizga qo'shiling!"
       },
       {
-        "title": "Ot minish - tabiat qo'ynida unutilmas lahzalar",
-        "desc": "Bizning maskanimiz tabiatdan to'liq bahramand bo'lish imkonini beruvchi ot minish xizmatlarini taklif etadi:",
+        "title": "Ziyorat va ECO turlar - unutilmas onlarni taqdim etadi",
+        "desc": "",
         "list": [
-          "Tajribali instruktorlar boshchiligida ot minish",
-          "Tog' landshaftlari orasida sayr qilish",
-          "Ruhiy va jismoniy hordiq chiqarish"
+          "Xazrat Ali ziyoratgohi",
+          "Quyosh muzeyi",
+          "So`qoq tog` yonbag`irlari",
+          "Achchiqko`l tog` kengliklari"
         ],
-        "footer": "Sizni Buloqboshi sanatoriysida kuch va sog'ligingizni tiklashga taklif qilamiz."
+        "footer": "Sizni Buloqboshi sanatoriyasi ham hordiq chiqarish va ma`naviy rohat olishga chaqiradi!"
       }
     ],
     "top_activities_title": "Mehmonlarimiz tomonidan eng ko'p tanlanadigan 3 ta muolaja",
     "top_activities": [
       {
-        "title": "Xitoy olov massaji",
-        "desc": "\"Buloqboshi Sanatoriyasi\"dagi Xitoy olov massaji tanani sog'lomlashtirishning o'ziga xos usulidir. Ushbu qadimiy terapiya tanani chuqur tozalash, energiya muvozanatini tiklash, toksinlarni olib tashlash, mushaklarni bo'shashtirish va qon aylanishini yaxshilashga yordam beradi.",
+        "title": "Hijoma va zuluk",
+        "desc": "\"Buloqboshi Sanatoriyasi\"dagi Hijoma va zuluk muolajasi tanani sog'lomlashtirishning o'ziga xos usulidir. Ushbu qadimiy terapiya tanadagi qon tomiqlarni chuqur tozalash, energiya muvozanatini tiklash, toksinlarni olib tashlash, mushaklarni bo'shashtirish va qon aylanishini yaxshilashga yordam beradi.",
         "benefits_title": "Afzalliklari:",
         "benefits": [
           "Stress va charchoqqa qarshi samarali kurash",
           "Mushak og'rig'ini kamaytirish",
           "Immunitet tizimini mustahkamlash",
-          "Teri elastikligini oshirish"
+          "Qon yangilanishini rag`batlantirish"
         ]
       },
       {
@@ -126,8 +127,8 @@
     "massage_services_subtitle": "\"Buloqboshi sanatoriysi\" tanani tiklash, mushaklarni bo'shashtirish va umumiy farovonlikni yaxshilash uchun professional massaj xizmatlarini taklif etadi. Har bir muolaja individual tarzda amalga oshiriladi va sog'lig'ingiz holatiga qarab tavsiya etiladi.",
     "massage_services": [
       {
-        "title": "Xitoy olov massaji",
-        "desc": "Issiqlik terapiyasi energiya balansini tiklashga, mushaklarni bo'shashtirishga va qon aylanishini yaxshilashga yordam beradi. Ushbu qadimiy protsedura tanani yoshartiradi va toksinlarni yo'q qilishga yordam beradi."
+        "title": "Bankali vakuum massaj",
+        "desc": "Vakuum yordamida qon aylanishini yaxshilash, mushaklarni bo'shashtirish va toksinlarni chiqarishga yordam beruvchi samarali muolaja."
       },
       {
         "title": "Gidromassaj",
@@ -138,8 +139,8 @@
         "desc": "Akupunktur nuqtalariga ta'sir qilish tanadagi energiya oqimini tartibga soladi, ichki organlarning faoliyatini yaxshilaydi va og'riqni kamaytiradi."
       },
       {
-        "title": "Issiq toshli massaj (Stoun-terapiya)",
-        "desc": "Issiq toshlar yordamida mushaklarni chuqur bo'shashtiradi, stressni engillashtirishga yordam beradi va yoqimli yengillik hissi beradi."
+        "title": "Asalli uqalash",
+        "desc": "Badanga surtilgan toza asal yordamida qilingan uqalash muolajasi mushaklarni chuqur bo'shashtiradi, yallig`lanishlarni kamaytiradi, stressni yengillashtirishga yordam beradi va yoqimli yengillik hissi beradi."
       },
       {
         "title": "Klassik massaj",
@@ -177,6 +178,8 @@
   "contact": {
     "section_label": "Bron qilish",
     "section_title": "Tashrif buyurishni xohlaysizmi?",
+    "map_title": "Bizning manzilimiz",
+    "view_on_google_maps": "Google Maps-da ko'rish",
     "title": "Biz Bilan Aloqa",
     "description": "Formani to'ldiring va biz siz bilan tez orada bog'lanamiz.",
     "form_name": "Ismingiz",

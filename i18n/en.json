@@ -14,7 +14,7 @@
   "about": {
     "section_label": "Health and Recreation Center",
     "title": "About Buloqboshi Sanatorium",
-    "description": "Located at an altitude of 1,300 meters above sea level in the city of Angren. We offer clean mountain air, professional doctors, and over 40 types of procedures.",
+    "description": "Located at an altitude of 1,300 meters above sea level in the city of Parkent. We offer clean mountain air, professional doctors, and over 40 types of procedures.",
     "sub_description": "A unique place combining treatment and relaxation. Ideal for restoring the body and strengthening health in a calm mountain atmosphere."
   },
   "services": {
@@ -35,7 +35,7 @@
       },
       {
         "title": "Relaxation - a quiet pastime among the mountains",
-        "desc": "\"Yangiobod Sanatorium\" is famous for its clean mountain air and offers guests a comfortable and relaxing holiday:",
+        "desc": "\"Buloqboshi Sanatorium\" is famous for its clean mountain air and offers guests a comfortable and relaxing holiday:",
         "list": [
           "Walking in nature – relief from stress and a boost of energy",
           "Relaxing on the trestle beds – enjoying the clean air and sun rays",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Marathons - physical activity and sport",
-        "desc": "Marathons for sports enthusiasts are organized in \"Yangiobod Sanatorium\":",
+        "desc": "Marathons for sports enthusiasts are organized in \"Buloqboshi Sanatorium\":",
         "list": [
           "Running on mountain trails – strengthening the body",
           "Team sports marathons – active time with friends and new acquaintances",
@@ -75,27 +75,28 @@
         "footer": "Do you love sports and want to direct your energy in the right direction? Join our marathons!"
       },
       {
-        "title": "Horseback riding - unforgettable moments in nature",
-        "desc": "Our resort offers horse riding services, which will allow you to fully enjoy nature:",
+        "title": "Pilgrimage and ECO tours - offering unforgettable moments",
+        "desc": "",
         "list": [
-          "Horse riding under the guidance of experienced instructors",
-          "Walks among mountain landscapes",
-          "Spiritual and physical relaxation"
+          "Hazrat Ali Shrine",
+          "Sun Museum",
+          "Sukok mountain slopes",
+          "Achchikkul mountain expanses"
         ],
-        "footer": "We invite you to restore energy and health at Buloqboshi Sanatorium."
+        "footer": "Buloqboshi Sanatorium invites you to relax and find spiritual peace!"
       }
     ],
     "top_activities_title": "TOP 3 activities by our guests",
     "top_activities": [
       {
-        "title": "Chinese Fire Massage",
-        "desc": "Chinese Fire Massage in \"Buloqboshi Sanatorium\" is a unique method of healing the body. This ancient therapy promotes deep body cleansing, restoration of energy balance, removal of toxins, muscle relaxation and improvement of blood circulation.",
+        "title": "Hijama and Leech Therapy",
+        "desc": "Hijama and leech therapy at \"Buloqboshi Sanatorium\" is a unique method of healing the body. This ancient therapy helps deeply cleanse blood vessels, restore energy balance, remove toxins, relax muscles, and improve blood circulation.",
         "benefits_title": "Benefits:",
         "benefits": [
           "Effective fight against stress and fatigue",
           "Reduction of muscle pain",
           "Strengthening the immune system",
-          "Increasing skin elasticity"
+          "Stimulating blood renewal"
         ]
       },
       {
@@ -126,8 +127,8 @@
     "massage_services_subtitle": "\"Buloqboshi Sanatorium\" offers professional massage services to restore the body, relax muscles and improve overall well-being. Each treatment is carried out individually and is recommended depending on your health condition.",
     "massage_services": [
       {
-        "title": "Chinese Fire Massage",
-        "desc": "Heat therapy helps restore energy balance, relax muscles and improve blood circulation. This ancient procedure revitalizes the body and helps eliminate toxins."
+        "title": "Vacuum Cupping Massage",
+        "desc": "An effective procedure that helps improve blood circulation, relax muscles, and remove toxins using vacuum suction."
       },
       {
         "title": "Hydromassage",
@@ -138,8 +139,8 @@
         "desc": "Impact on acupuncture points regulates the flow of energy in the body, improves the functioning of internal organs and reduces pain."
       },
       {
-        "title": "Hot Stone Massage",
-        "desc": "Deeply relaxes muscles with hot stones, helps relieve stress and gives a pleasant feeling of lightness."
+        "title": "Honey Massage",
+        "desc": "Massage using pure honey applied to the body deeply relaxes muscles, reduces inflammation, helps relieve stress, and provides a pleasant feeling of lightness."
       },
       {
         "title": "Classic massage",
@@ -177,6 +178,8 @@
   "contact": {
     "section_label": "Reservations",
     "section_title": "Want to visit?",
+    "map_title": "Our Location",
+    "view_on_google_maps": "View on Google Maps",
     "title": "Contact Us",
     "description": "Fill out the form and we will contact you shortly.",
     "form_name": "Name",
