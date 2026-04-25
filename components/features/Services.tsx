@@ -49,7 +49,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
             >
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section */}
-                <div className="w-full md:w-[45%] lg:w-[60%] relative h-64 sm:h-80 md:h-auto min-h-[300px] bg-muted animate-shimmer-fast overflow-hidden">
+                <div className="w-full md:w-1/2 relative h-64 sm:h-80 md:h-auto min-h-[300px] bg-muted animate-shimmer-fast overflow-hidden">
                   <Image
                     src={images[idx]}
                     alt={service.title}
@@ -61,7 +61,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                 </div>
                 
                 {/* Content Section */}
-                <div className="w-full md:w-[55%] lg:w-[60%] p-8 lg:p-12 flex flex-col justify-center">
+                <div className="w-full md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
                   <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-foreground">
                     {service.title}
                   </h3>
