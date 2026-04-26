@@ -8,7 +8,7 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
   return (
     <section className="relative min-h-[90vh] w-full flex items-center justify-start overflow-hidden pt-16 md:pt-20">
       {/* High-quality background with refined gradient overlay */}
-      <div className="absolute inset-0 bg-[url('/bg-image.png')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat" />
       <div className="absolute inset-0 bg-black/40" />
       
       <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 mt-4 sm:mt-6 lg:mt-10">
