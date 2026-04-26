@@ -7,13 +7,12 @@ export default function Services({ dict }: { dict: Dictionary }) {
     '/services/image.png',
     '/services/image copy.png',
     '/services/image copy 2.png',
-    '/services/image copy 3.png',
     '/services/image copy 4.png',
-    '/services/eco_tours.png'
+    '/111.png'
   ];
 
   const activityImages = [
-    '/services/activities/image.png',
+    '/222.png',
     '/services/activities/image copy.png',
     '/services/activities/image copy 2.png',
   ];
