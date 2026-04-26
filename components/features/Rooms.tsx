@@ -65,7 +65,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
 
   return (
     <section id="rooms" className="py-20 md:py-24 bg-background relative border-t border-border/40">
-      <div className="container mx-auto px-4 md:px-6 max-w-440">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12 md:mb-16 space-y-5" data-aos="fade-up" suppressHydrationWarning>
           <h4 className="text-xs md:text-sm font-semibold tracking-[0.2em] text-primary uppercase">
             {dict.rooms.section_label}

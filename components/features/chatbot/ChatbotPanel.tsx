@@ -38,7 +38,7 @@ export default function ChatbotPanel({
     };
 
     return (
-        <div className="flex w-full max-w-md flex-col overflow-hidden rounded-2xl border border-primary/25 bg-slate-950/90 shadow-2xl backdrop-blur-xl sm:w-96 sm:rounded-3xl md:w-[25rem] max-h-[calc(100dvh-5.25rem)] sm:max-h-[calc(100dvh-7rem)]">
+        <div className="flex w-full max-w-[calc(100vw-2rem)] sm:max-w-md flex-col overflow-hidden rounded-2xl border border-primary/25 bg-slate-950/90 shadow-2xl backdrop-blur-xl sm:w-96 sm:rounded-3xl md:w-[25rem] max-h-[calc(100dvh-5.25rem)] sm:max-h-[calc(100dvh-7rem)]">
             <div className="flex items-center justify-between border-b border-white/10 bg-linear-to-r from-primary/20 via-cyan-400/15 to-emerald-400/15 px-3 py-2.5 sm:px-4 sm:py-3">
                 <div>
                     <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-white">{dict.header_title}</p>

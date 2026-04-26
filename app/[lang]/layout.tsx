@@ -68,7 +68,7 @@ export default async function RootLayout({
     return (
         <html lang={lang} className="scroll-smooth">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground flex flex-col min-h-screen`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground flex flex-col min-h-screen overflow-x-hidden`}
                 suppressHydrationWarning
             >
                 <Navbar dict={dict} lang={lang} />

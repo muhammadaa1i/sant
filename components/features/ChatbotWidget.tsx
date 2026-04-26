@@ -22,7 +22,7 @@ export default function ChatbotWidget({ dict }: { dict: ChatbotDict }) {
   } = useChatbotSession({ dict, pathname });
 
   return (
-    <div className="fixed bottom-2 left-2 right-2 z-70 flex flex-col items-end gap-2 sm:bottom-5 sm:left-auto sm:right-5 sm:gap-3">
+    <div className="fixed bottom-4 right-4 z-70 flex flex-col items-end gap-2 sm:bottom-5 sm:right-5 sm:gap-3 max-w-[calc(100vw-2rem)]">
       {isOpen && (
         <ChatbotPanel
           dict={dict}

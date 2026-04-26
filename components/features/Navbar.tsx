@@ -50,14 +50,14 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
           {/* Left: Menu Icon + Section Links */}
           <div className="flex items-center justify-start gap-4 min-w-0">
             <button
-              className="p-2 rounded-full hover:bg-black/5 transition-colors"
+              className="p-2 rounded-full hover:bg-black/5 transition-colors lg:hidden"
               onClick={() => setIsOpen(true)}
               aria-label="Open menu"
             >
               <Menu className="h-7 w-7" />
             </button>
 
-            <div className="hidden md:flex items-center gap-6 min-w-0">
+            <div className="hidden lg:flex items-center gap-6 min-w-0">
               {navLinks.map((link) => {
                 const sectionId = link.href.replace('#', '');
                 const isActive = (sectionId === '' && activeSection === '') || (sectionId !== '' && activeSection === sectionId);
@@ -81,7 +81,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
 
           {/* Center: Logo */}
           <div className="flex items-center justify-center">
-            <a href="#" className="hidden md:flex items-center gap-3 group">
+            <a href="#" className="hidden lg:flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-full drop-shadow-md">
                 <Image 
                   src="/logo.png" 
@@ -94,19 +94,19 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
               </div>
               <span className="text-xl font-bold tracking-widest uppercase drop-shadow-sm">Buloqboshi</span>
             </a>
-            <a href="#" className="flex md:hidden items-center gap-2">
+            <a href="#" className="flex lg:hidden items-center gap-2">
                <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full" priority sizes="40px" />
             </a>
           </div>
 
           {/* Right: Language & Booking */}
           <div className="flex items-center justify-end gap-4">
-            <div className="hidden md:block text-slate-800">
+            <div className="hidden lg:block text-slate-800">
               <LanguageSwitcher />
             </div>
             <Button 
               size="lg" 
-              className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-md px-6 h-11 text-sm font-semibold tracking-wide capitalize shadow-md transition-transform hover:scale-105" 
+              className="hidden lg:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-md px-6 h-11 text-sm font-semibold tracking-wide capitalize shadow-md transition-transform hover:scale-105" 
               asChild
             >
                 <a href="#contact">{dict.nav.book}</a>
