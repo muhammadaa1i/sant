@@ -17,6 +17,26 @@ export type Dictionary = {
     description: string;
     sub_description: string;
   };
+  mini_services: {
+    title: string;
+    subtitle: string;
+    cards: {
+      title: string;
+      items: string[];
+      btn: string;
+    }[];
+    view_all: string;
+  };
+  physio_services: {
+    title: string;
+    subtitle: string;
+    items: {
+      title: string;
+      desc: string;
+      list: string[];
+      image: string;
+    }[];
+  };
   services: {
     title: string;
     subtitle: string;

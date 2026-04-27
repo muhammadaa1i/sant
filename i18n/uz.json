@@ -17,6 +17,199 @@
     "description": "Parkent shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
     "sub_description": "Davolanish va dam olishni o'zida mujassam etgan noyob maskan. Tana va ruhni tiklash uchun ideal joy."
   },
+  "mini_services": {
+    "title": "Bizning xizmatlar",
+    "subtitle": "Buloqboshi sanatoriyasi sog'lig'ingizni tiklash va mustahkamlash uchun zamonaviy va samarali muolajalarni taklif etadi. Bizda tibbiy diagnostika, fizioterapiya, fitoterapiya, gidroterapiya va turli xil massaj xizmatlari mavjud. Yuqori malakali shifokorlarimiz individual yondashuv asosida xizmat ko'rsatib, sog'lig'ingizni yaxshilashga yordam beradi.",
+    "cards": [
+      {
+        "title": "Sifatli diagnostika",
+        "items": [
+          "UTT (Ultratovush tekshiruvi)",
+          "Kardiogramma",
+          "Umumiy qon tahlillari",
+          "Umumiy peshob tahlili"
+        ],
+        "btn": "Batafsil ko'rish"
+      },
+      {
+        "title": "Bardavom muolajalar",
+        "items": [
+          "Fizioterapiya",
+          "Fitoterapiya",
+          "Gidroterapiya",
+          "Turli xil massajlar"
+        ],
+        "btn": "Batafsil ko'rish"
+      },
+      {
+        "title": "Mutaxassislar qabuli",
+        "items": [
+          "Kardiolog qabuli",
+          "Terapevt qabuli",
+          "UTT shifokori qabuli",
+          "Ginekolog qabuli"
+        ],
+        "btn": "Batafsil ko'rish"
+      },
+      {
+        "title": "Qo'shimcha xizmatlar",
+        "items": [
+          "Toza tog' havosida dam olish",
+          "Sauna sog'lomlashtirish uchun",
+          "Bilyard, stol tennisi",
+          "Yozgi va qishgi basseynlar"
+        ],
+        "btn": "Batafsil ko'rish"
+      }
+    ],
+    "view_all": "Barcha xizmatlarni ko'rish"
+  },
+  "physio_services": {
+    "title": "Fizioterapiya Muolajalari",
+    "subtitle": "Fizioterapiya — bu organizmni dorisiz yoki minimal dori bilan tiklashga yordam beradigan zamonaviy va xavfsiz muolajalar majmuasi. Ular qon aylanishini yaxshilaydi, yallig‘lanishni kamaytiradi, og‘riqni yengillashtiradi va to‘qimalarning tabiiy tiklanish jarayonini tezlashtiradi.",
+    "items": [
+      {
+        "title": "Elektroforez",
+        "desc": "Dori moddalarini elektr toki yordamida to‘g‘ridan-to‘g‘ri zararlangan hududga yetkazadi.",
+        "list": [
+          "Dori tez va samarali so‘riladi",
+          "Yallig‘lanish va og‘riq kamayadi",
+          "Mahalliy davolash kuchayadi"
+        ],
+        "image": "/devices/ELEKTROFAREZ.png"
+      },
+      {
+        "title": "Darsonval",
+        "desc": "Yuqori chastotali tok orqali organizmga ta’sir qiladi.",
+        "list": [
+          "Qon aylanishi va limfa oqimi yaxshilanadi",
+          "Asab tizimi tinchlanadi",
+          "Teri va soch follikulalari faollashadi"
+        ],
+        "image": "/devices/DARSENVAL.png"
+      },
+      {
+        "title": "Ultratovush terapiyasi",
+        "desc": "Ultratovush to‘lqinlari orqali chuqur to‘qimalarga ta’sir qiladi.",
+        "list": [
+          "Hujayra regeneratsiyasi tezlashadi",
+          "Shish va spazm kamayadi",
+          "Og‘riq sindromi yengillashadi"
+        ],
+        "image": "/devices/ULTRATOVUSH TERAPIYASI.png"
+      },
+      {
+        "title": "Ingalyatsiya",
+        "desc": "Dori vositalari bug‘ yoki aerozol shaklida nafas yo‘llariga yetkaziladi.",
+        "list": [
+          "Nafas olish yengillashadi",
+          "Balg‘am chiqishi osonlashadi",
+          "Yallig‘lanish kamayadi"
+        ],
+        "image": "/devices/INGALYATSIYA.png"
+      },
+      {
+        "title": "Tubus-kvars",
+        "desc": "Ultrabinafsha nurlar bilan davolash usuli.",
+        "list": [
+          "Mikroblarni yo‘q qiladi",
+          "Immunitetni mustahkamlaydi",
+          "LOR kasalliklarida samarali"
+        ],
+        "image": "/devices/TUBUS KVARTS.png"
+      },
+      {
+        "title": "UVCH-terapiya",
+        "desc": "Yuqori chastotali elektromagnit maydon bilan davolash.",
+        "list": [
+          "Chuqur isituvchi ta’sir beradi",
+          "Qon aylanishi yaxshilanadi",
+          "Yallig‘lanish tez kamayadi"
+        ],
+        "image": "/devices/UVCH TERAPIYA.png"
+      },
+      {
+        "title": "Magnitoterapiya",
+        "desc": "Past chastotali magnit maydon yordamida ta’sir qiladi.",
+        "list": [
+          "Qon tomirlar kengayadi",
+          "Shish va og‘riq kamayadi",
+          "To‘qimalar tiklanishi tezlashadi"
+        ],
+        "image": "/devices/MAGNIT TERAPIYA.png"
+      },
+      {
+        "title": "Nugabest apparati",
+        "desc": "Infraqizil issiqlik va mexanik ta’sir orqali umurtqaga ishlaydi.",
+        "list": [
+          "Umurtqa pog‘onasi bo‘shashadi",
+          "Mushak spazmi kamayadi",
+          "Qomat va umumiy holat yaxshilanadi"
+        ],
+        "image": "/devices/NUGABEST TERAPIYA.png"
+      },
+      {
+        "title": "Parafin muolajasi",
+        "desc": "Issiqlik orqali chuqur to‘qimalarga ta’sir qiladi.",
+        "list": [
+          "Bo‘g‘imlar harakatchanligi oshadi",
+          "Mushaklar bo‘shashadi",
+          "Surunkali og‘riqlar kamayadi"
+        ],
+        "image": "/devices/PARAFIN TERAPIYA.png"
+      },
+      {
+        "title": "Umurtqani cho‘zish moslamasi",
+        "desc": "Maxsus uskunada umurtqani ehtiyotkorlik bilan cho‘zish.",
+        "list": [
+          "Disklarga tushadigan bosim kamayadi",
+          "Asab siqilishi yengillashadi",
+          "Bel va bo‘yin og‘rig‘i kamayadi"
+        ],
+        "image": "/devices/UMURTQA POG`ONA CHO`ZISH APPARATI.png"
+      },
+      {
+        "title": "Tuzli g‘or (Galokamera)",
+        "desc": "Tuzli muhit orqali nafas tizimiga ijobiy ta’sir qiladi.",
+        "list": [
+          "Nafas yo‘llari tozalanadi",
+          "Allergik holatlar kamayadi",
+          "Immunitet mustahkamlanadi"
+        ],
+        "image": "/devices/GALOKAMERA - TUZLI G`OR.png"
+      },
+      {
+        "title": "Vibromassaj",
+        "desc": "Vibratsiya orqali mushak va to‘qimalarga ta’sir qiladi.",
+        "list": [
+          "Qon aylanishi kuchayadi",
+          "Mushaklar bo‘shashadi",
+          "Shishlar kamayadi"
+        ],
+        "image": "/devices/VIBROMASSAJ.png"
+      },
+      {
+        "title": "Ozonoterapiya",
+        "desc": "Ozon bilan boyitilgan kislorod orqali davolash.",
+        "list": [
+          "Hujayralar kislorod bilan ta’minlanadi",
+          "Immunitet oshadi",
+          "Yallig‘lanishga qarshi ta’sir qiladi"
+        ],
+        "image": "/devices/OZONTERAPIYA.png"
+      },
+      {
+        "title": "Lazerterapiya",
+        "desc": "Past intensivlikdagi lazer nuri bilan davolash.",
+        "list": [
+          "Hujayra tiklanishi tezlashadi",
+          "Og‘riq kamayadi",
+          "Yallig‘lanish jarayoni sekinlashadi"
+        ],
+        "image": "/devices/LAZERTERAPIYA VLOK.png"
+      }
+    ]
+  },
   "services": {
     "title": "Xizmatlar",
     "subtitle": "Bizning sanatoriymiz nafaqat salomatligingizni yaxshilash, balki faol dam olish va yangi sarguzashtlar uchun ideal joydir. Bu yerda siz quyidagi mashg'ulotlar bilan shug'ullanishingiz mumkin:",

@@ -1,5 +1,5 @@
 import { Dictionary } from '@/lib/types';
-import { Button } from '@/components/ui/button';
+
 
 export default function About({ dict }: { dict: Dictionary }) {
   return (
@@ -21,13 +21,7 @@ export default function About({ dict }: { dict: Dictionary }) {
             <p className="text-base text-muted-foreground leading-relaxed">
               {dict.about.sub_description}
             </p>
-            <div className="pt-4">
-              <Button asChild variant="outline" className="rounded-full px-8 py-6 text-base hover:bg-primary hover:text-primary-foreground transition-all">
-                <a href="#services">
-                  {dict.nav.services}
-                </a>
-              </Button>
-            </div>
+
           </div>
 
           {/* Video / Visual Anchor */}

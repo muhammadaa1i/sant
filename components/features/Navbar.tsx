@@ -119,7 +119,7 @@ export default function Navbar({ dict }: { dict: Dictionary, lang: string }) {
       )}
 
       {/* Sidebar Navigation */}
-      <div className={`fixed top-0 left-0 h-full w-[380px] bg-white/95 backdrop-blur-xl z-[60] shadow-[10px_0_50px_rgba(0,0,0,0.1)] border-r border-slate-200/50 transform transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed top-0 left-0 h-full w-[380px] bg-white z-[60] shadow-[10px_0_50px_rgba(0,0,0,0.1)] border-r border-slate-200/50 transform transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-8 border-b border-transparent">
