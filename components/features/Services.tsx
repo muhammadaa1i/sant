@@ -42,10 +42,10 @@ export default function Services({ dict }: { dict: Dictionary }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-32" data-aos="fade-up" suppressHydrationWarning>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32" data-aos="fade-up" suppressHydrationWarning>
           {dict.physio_services.items.map((service, idx) => (
             <div key={idx} className="group bg-white hover:bg-primary rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-100/50">
-              <div className="relative h-60 w-full bg-white flex items-center justify-center border-b border-slate-100/50 group-hover:border-white/20 transition-colors z-10">
+              <div className="relative h-60 w-full flex items-center justify-center border-b border-slate-100/50 group-hover:border-white/20 transition-colors z-10">
                 <Image 
                   src={service.image} 
                   alt={service.title} 
