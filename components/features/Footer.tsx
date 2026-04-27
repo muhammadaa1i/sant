@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, Instagram, Send, Youtube } from 'lucide-react';
+import { MapPin, Phone, Instagram, Send, Youtube, Facebook } from 'lucide-react';
 import { Dictionary } from '@/lib/types';
 
 export default function Footer({ dict, lang }: { dict: Dictionary, lang: string }) {
@@ -38,31 +38,24 @@ export default function Footer({ dict, lang }: { dict: Dictionary, lang: string 
             <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-sm">
              {dict.hero.subtitle}
             </p>
-            <div className="flex gap-6 pt-4">
-              <a 
-                href="https://www.instagram.com/buloqboshi_sanatoriyasi1/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-14 h-14 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-500 animate-pulse-premium shadow-sm hover:shadow-md"
-              >
-                <Instagram className="w-7 h-7" />
-              </a>
-              <a 
-                href="https://t.me/buloqboshisanotoriya" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-14 h-14 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-500 animate-pulse-premium shadow-sm hover:shadow-md"
-              >
-                <Send className="w-7 h-7" />
-              </a>
-              <a 
-                href="https://www.youtube.com/@Buloqboshisanatoriyasi" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-14 h-14 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-500 animate-pulse-premium shadow-sm hover:shadow-md"
-              >
-                <Youtube className="w-7 h-7" />
-              </a>
+            <div className="flex gap-5 pt-4">
+              {[
+                { href: "https://www.instagram.com/buloqboshi_sanatoriyasi1/", icon: Instagram, label: "Instagram" },
+                { href: "https://www.facebook.com/profile.php?id=61585638731929", icon: Facebook, label: "Facebook" },
+                { href: "https://t.me/buloqboshisanotoriya", icon: Send, label: "Telegram" },
+                { href: "https://www.youtube.com/@Buloqboshisanatoriyasi", icon: Youtube, label: "Youtube" }
+              ].map((social, i) => (
+                <a 
+                  key={i}
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="animate-social-pulse flex items-center justify-center w-14 h-14 rounded-full bg-white text-[#00A3FF] border-[1.5px] border-[#00A3FF]/20 shadow-[0_0_20px_rgba(0,163,255,0.15)] transition-colors duration-300"
+                  aria-label={social.label}
+                >
+                  <social.icon className="w-6 h-6" strokeWidth={1.5} />
+                </a>
+              ))}
             </div>
           </div>
 

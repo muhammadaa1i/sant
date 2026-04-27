@@ -140,13 +140,17 @@
         "title": "Manual therapy",
         "desc": "Special techniques of manual manipulation of the spine and joints to improve mobility and reduce pain."
       }
-    ]
+    ],
+    "reviews_title": "Customers' opinions",
+    "reviews_subtitle": "Guests of \"Buloqboshi Sanatorium\" share their impressions. Discover their sincere comments and experiences!",
+    "client_video": "Our client"
   },
   "rooms": {
     "section_label": "Comfort & Serenity",
     "title": "Our Rooms",
     "subtitle": "Comfortable and modern rooms for your rest.",
     "standard": "Standard Room",
+    "semi_luxe": "Semi-Luxe Room",
     "luxe": "Luxe Room",
     "cottage": "Family Cottage",
     "price_from": "from",
@@ -170,6 +174,7 @@
     "section_title": "Want to visit?",
     "map_title": "Our Location",
     "view_on_google_maps": "View on Google Maps",
+    "view_on_yandex_maps": "View on Yandex Maps",
     "title": "Contact Us",
     "description": "Fill out the form and we will contact you shortly.",
     "form_name": "Name",

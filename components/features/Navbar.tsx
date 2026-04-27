@@ -1,23 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, Instagram, Send, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LanguageSwitcher from './LanguageSwitcher';
 import { Dictionary } from '@/lib/types';
 
-export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string }) {
+export default function Navbar({ dict }: { dict: Dictionary, lang: string }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  const isSolid = scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-
       const sections = ['services', 'rooms', 'contact'];
       const scrollPos = window.scrollY + 150;
       
@@ -50,7 +45,7 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
           {/* Left: Menu Icon + Section Links */}
           <div className="flex items-center justify-start gap-4 min-w-0">
             <button
-              className="p-2 rounded-full hover:bg-black/5 transition-colors lg:hidden"
+              className="p-2 rounded-full hover:bg-black/5 transition-colors"
               onClick={() => setIsOpen(true)}
               aria-label="Open menu"
             >
@@ -124,18 +119,17 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
       )}
 
       {/* Sidebar Navigation */}
-      <div className={`fixed top-0 left-0 h-full w-[380px] bg-white z-[60] shadow-2xl transform transition-transform duration-500 ease-in-out flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed top-0 left-0 h-full w-[380px] bg-white/95 backdrop-blur-xl z-[60] shadow-[10px_0_50px_rgba(0,0,0,0.1)] border-r border-slate-200/50 transform transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         
         {/* Sidebar Header */}
-        <div className="flex items-center justify-between p-6">
-          <a href="#" className="flex flex-col items-center gap-2 pl-4" onClick={() => setIsOpen(false)}>
-            <Image src="/logo.png" alt="Logo" width={56} height={56} className="rounded-full object-cover shadow-sm" sizes="56px" />
-            <span className="text-sm font-bold tracking-widest text-primary uppercase text-center">
-              Buloqboshi<br/>Sanatoriyasi
-            </span>
+        <div className="flex items-center justify-between p-8 border-b border-transparent">
+          <a href="#" className="flex items-center group" onClick={() => setIsOpen(false)}>
+            <div className="relative w-20 h-20 transition-transform duration-500">
+              <Image src="/logo.png" alt="Logo" fill className="object-contain" sizes="80px" />
+            </div>
           </a>
           <button 
-            className="p-2 text-slate-500 hover:text-slate-900 transition-colors"
+            className="p-2 text-slate-400 hover:text-black hover:rotate-90 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             <X className="h-7 w-7" strokeWidth={1.5} />
@@ -143,8 +137,8 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
         </div>
 
         {/* Sidebar Links */}
-        <div className="flex flex-col px-8 mt-12 gap-8 flex-grow">
-          {navLinks.map((link) => {
+        <div className="flex flex-col px-8 mt-4 gap-6 flex-grow overflow-y-auto">
+          {navLinks.map((link, idx) => {
             const sectionId = link.href.replace('#', '');
             const isActive = (sectionId === '' && activeSection === '') || (sectionId !== '' && activeSection === sectionId);
             
@@ -152,50 +146,47 @@ export default function Navbar({ dict, lang }: { dict: Dictionary, lang: string 
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-2xl font-bold transition-all flex items-center gap-3 ${
-                  isActive ? 'text-primary translate-x-2' : 'text-slate-600 hover:text-primary hover:translate-x-2'
+                className={`group relative text-xl font-bold tracking-wide transition-all duration-300 flex items-center ${
+                  isActive 
+                    ? 'text-primary/80' 
+                    : 'text-[#3E5C4A] hover:text-primary hover:translate-x-2'
                 }`}
+                style={{ transitionDelay: `${idx * 50}ms` }}
                 onClick={() => setIsOpen(false)}
               >
-                {isActive && <div className="w-2 h-8 bg-primary rounded-full" />}
-                {link.label}
+                <span>{link.label}</span>
               </a>
             );
           })}
-          <div className="md:hidden mt-4 pt-4 border-t border-slate-100">
-             <LanguageSwitcher />
-             <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-md h-12 text-lg font-semibold capitalize tracking-wide shadow-md" asChild>
-                <Link href={`/${lang}/contact`} onClick={() => setIsOpen(false)}>{dict.nav.book}</Link>
-             </Button>
+          
+          <div className="lg:hidden mt-4 pt-8 border-t border-slate-100 space-y-6">
+             <div>
+               <LanguageSwitcher />
+             </div>
           </div>
         </div>
 
         {/* Sidebar Footer */}
-        <div className="p-8 flex gap-6">
-          <a 
-            href="https://www.instagram.com/buloqboshi_sanatoriyasi1/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
-          >
-            <Instagram className="w-6 h-6" />
-          </a>
-          <a 
-            href="https://t.me/buloqboshisanotoriya" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
-          >
-            <Send className="w-6 h-6" />
-          </a>
-          <a 
-            href="https://www.youtube.com/@Buloqboshisanatoriyasi" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-primary transition-all duration-300 animate-pulse-premium shadow-sm hover:shadow-md"
-          >
-            <Youtube className="w-6 h-6" />
-          </a>
+        <div className="p-8 pb-12 bg-white">
+          <div className="flex gap-5">
+            {[
+              { href: "https://www.instagram.com/buloqboshi_sanatoriyasi1/", icon: Instagram, label: "Instagram" },
+              { href: "https://t.me/buloqboshisanotoriya", icon: Send, label: "Telegram" },
+              { href: "https://www.facebook.com/profile.php?id=61585638731929", icon: Facebook, label: "Facebook" },
+              { href: "https://www.youtube.com/@Buloqboshisanatoriyasi", icon: Youtube, label: "Youtube" }
+            ].map((social, i) => (
+              <a 
+                key={i}
+                href={social.href} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="animate-social-pulse flex items-center justify-center w-12 h-12 rounded-full bg-white text-[#00A3FF] border-[1.5px] border-[#00A3FF]/20 shadow-[0_0_20px_rgba(0,163,255,0.15)] transition-colors duration-300"
+                aria-label={social.label}
+              >
+                <social.icon className="w-[22px] h-[22px]" strokeWidth={1.5} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </>

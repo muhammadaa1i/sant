@@ -39,12 +39,16 @@ export type Dictionary = {
       title: string;
       desc: string;
     }[];
+    reviews_title: string;
+    reviews_subtitle: string;
+    client_video: string;
   };
   rooms: {
     section_label: string;
     title: string;
     subtitle: string;
     standard: string;
+    semi_luxe: string;
     luxe: string;
     cottage: string;
     price_from: string;
@@ -68,6 +72,7 @@ export type Dictionary = {
     section_title: string;
     map_title: string;
     view_on_google_maps: string;
+    view_on_yandex_maps: string;
     title: string;
     description: string;
     form_name: string;

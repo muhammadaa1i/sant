@@ -30,7 +30,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
   const cards: RoomCard[] = [
     {
       title: dict.rooms.standard,
-      price: "545 000 UZS",
+      price: "400 000 UZS",
       image: '/standart/STANDART.JPG',
       details: [
         { label: 'Meals', value: dict.rooms.features.meals_3 },
@@ -40,8 +40,8 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
       procedureIcons: [HeartPulse, Stethoscope],
     },
     {
-      title: dict.rooms.luxe,
-      price: "655 000 UZS",
+      title: dict.rooms.semi_luxe,
+      price: "500 000 UZS",
       image: '/lux/POL LYUKS.JPG',
       details: [
         { label: 'Meals', value: dict.rooms.features.meals_3 },
@@ -51,12 +51,12 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
       procedureIcons: [HeartPulse, Stethoscope, Dumbbell],
     },
     {
-      title: dict.rooms.cottage,
-      price: "3 500 000 UZS",
-      image: '/lux/POLLYUKS.JPG',
+      title: dict.rooms.luxe,
+      price: "600 000 UZS",
+      image: '/lux/LYUKS XONA.JPG',
       details: [
         { label: 'Meals', value: dict.rooms.features.all_inclusive },
-        { label: 'Guests', value: '4-6' },
+        { label: 'Guests', value: '2-4' },
       ],
       facilityIcons: [BedDouble, Wifi, Utensils],
       procedureIcons: [HeartPulse, Dumbbell],
@@ -93,12 +93,6 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
-
-
-
-
-              <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/45 to-transparent transition-opacity duration-500 group-hover:from-black/90" />
 
               <div className="absolute left-5 right-5 top-5 sm:left-7 sm:right-7 text-white">
                 <h3 className="text-3xl sm:text-4xl font-bold leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">

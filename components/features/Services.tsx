@@ -1,20 +1,16 @@
 import { Dictionary } from '@/lib/types';
 import Image from 'next/image';
-import { Check, Flame, Droplet, Activity, Flower2, User, Hand } from 'lucide-react';
+import { Flame, Droplet, Activity, Flower2, User, Hand } from 'lucide-react';
+import CustomerReviews from './CustomerReviews';
 
 export default function Services({ dict }: { dict: Dictionary }) {
   const images = [
     '/services/image.png',
     '/services/image copy.png',
     '/services/image copy 2.png',
+    '/services/image copy 3.png',
     '/services/image copy 4.png',
-    '/111.png'
-  ];
-
-  const activityImages = [
-    '/222.png',
-    '/services/activities/image copy.png',
-    '/services/activities/image copy 2.png',
+    '/services/eco_tours.png',
   ];
 
   const massageIcons = [
@@ -40,17 +36,18 @@ export default function Services({ dict }: { dict: Dictionary }) {
 
         <div className="flex flex-col gap-8 lg:gap-10">
           {dict.services.items.map((service, idx) => (
+            // Keep image source stable even if content count changes.
             <div 
-              key={idx} 
+              key={idx}
               className="group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500"
               data-aos="fade-up" 
               suppressHydrationWarning
             >
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section */}
-                <div className="w-full md:w-[45%] lg:w-[40%] relative h-64 sm:h-80 md:h-auto min-h-[300px]">
+                <div className="w-full md:w-[45%] lg:w-[40%] relative h-64 sm:h-80 md:h-auto min-h-75">
                   <Image
-                    src={images[idx]}
+                    src={images[idx] ?? images[images.length - 1]}
                     alt={service.title}
                     fill
                     className="object-cover"
@@ -89,54 +86,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
           ))}
         </div>
 
-        {/* TOP 3 Activities Section */}
-        {dict.services.top_activities && dict.services.top_activities.length > 0 && (
-          <div className="mt-32">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12" data-aos="fade-up" suppressHydrationWarning>
-              {dict.services.top_activities_title}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {dict.services.top_activities.map((activity, idx) => (
-                <div 
-                  key={idx} 
-                  className="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100/50"
-                  data-aos="fade-up"
-                  data-aos-delay={idx * 100}
-                  suppressHydrationWarning
-                >
-                  <div className="relative h-56 w-full shrink-0">
-                    <Image
-                      src={activityImages[idx]}
-                      alt={activity.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                    <div className="absolute bottom-0 left-0 bg-primary text-primary-foreground px-6 py-2.5 text-sm md:text-base font-medium rounded-tr-xl">
-                      {activity.title}
-                    </div>
-                  </div>
-                  <div className="p-6 md:p-8 flex flex-col grow">
-                    <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                      {activity.desc}
-                    </p>
-                    <p className="text-sm text-slate-700 mb-2">
-                      {activity.benefits_title}
-                    </p>
-                    <ul className="space-y-2">
-                      {activity.benefits.map((benefit, i) => (
-                        <li key={i} className="flex items-start text-xs md:text-sm text-slate-700">
-                          <Check className="w-4 h-4 text-primary mr-2 shrink-0 mt-0.5" strokeWidth={3} />
-                          <span className="leading-relaxed">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+
 
         {/* Massage Services Section */}
         {dict.services.massage_services && dict.services.massage_services.length > 0 && (
@@ -176,6 +126,8 @@ export default function Services({ dict }: { dict: Dictionary }) {
             </div>
           </div>
         )}
+        {/* Customer Reviews Section */}
+        <CustomerReviews dict={dict} />
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { i18n, Locale } from "../../i18n/settings";
 import { getDictionary } from "../../i18n/get-dictionary";
 import Navbar from "@/components/features/Navbar";
 import Footer from "@/components/features/Footer";
-import ClientEnhancements from "@/components/ClientEnhancements";
+import ClientEnhancements from "@/components/ClientEnhancements"; 
 
 const geistSans = Geist({
     variable: "--font-geist-sans",

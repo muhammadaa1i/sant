@@ -140,13 +140,17 @@
         "title": "Manual terapiya",
         "desc": "Harakatchanlikni yaxshilash va og'riqni kamaytirish uchun umurtqa pog'onasi va bo'g'imlarni qo'lda manipulyatsiya qilishning maxsus usullari."
       }
-    ]
+    ],
+    "reviews_title": "Mijozlarimiz fikrlari",
+    "reviews_subtitle": "\"Buloqboshi sanatoriyasi\" mehmonlari biz haqimizda qanday fikrda? Ularning samimiy izohlari va taassurotlari bilan tanishing!",
+    "client_video": "Mijozimiz"
   },
   "rooms": {
     "section_label": "Qulaylik va tinchlik",
     "title": "Bizning Xonalar",
     "subtitle": "Sizning dam olishingiz uchun qulay va zamonaviy xonalar.",
     "standard": "Standart Xona",
+    "semi_luxe": "Yarim Lyuks Xona",
     "luxe": "Lyuks Xona",
     "cottage": "Oilaiviy Kottej",
     "price_from": "boshlab",
@@ -170,6 +174,7 @@
     "section_title": "Tashrif buyurishni xohlaysizmi?",
     "map_title": "Bizning manzilimiz",
     "view_on_google_maps": "Google Maps-da ko'rish",
+    "view_on_yandex_maps": "Yandex Maps-da ko'rish",
     "title": "Biz Bilan Aloqa",
     "description": "Formani to'ldiring va biz siz bilan tez orada bog'lanamiz.",
     "form_name": "Ismingiz",
