@@ -154,6 +154,8 @@ export default function Services({ dict }: { dict: Dictionary }) {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                    quality={60}
+                    priority={idx < 2}
                   />
                 </div>
                 

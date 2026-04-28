@@ -94,6 +94,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 quality={60}
+                priority={idx === 0}
               />
 
               <div className="absolute left-5 right-5 top-5 sm:left-7 sm:right-7 text-white">
