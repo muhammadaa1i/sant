@@ -48,7 +48,7 @@ export default function Contact({ dict }: { dict: Dictionary }) {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-[100px] hidden lg:block"></div>
       <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <div className="space-y-8" data-aos="fade-right" suppressHydrationWarning>
+          <div className="space-y-8" data-aos="fade-right" data-aos-offset="100" suppressHydrationWarning>
             <h4 className="text-sm font-semibold tracking-wider text-primary uppercase">
               {dict.contact.section_label}
             </h4>
@@ -61,7 +61,7 @@ export default function Contact({ dict }: { dict: Dictionary }) {
             </p>
           </div>
 
-          <div className="bg-background rounded-3xl p-8 lg:p-12 shadow-xl ring-1 ring-border/50" data-aos="fade-left" data-aos-delay="100" suppressHydrationWarning>
+          <div className="bg-background rounded-3xl p-8 lg:p-12 shadow-xl ring-1 ring-border/50" data-aos="fade-left" data-aos-delay="100" data-aos-offset="100" suppressHydrationWarning>
             <h3 className="text-2xl font-bold mb-8 text-foreground">{dict.contact.title}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-3">

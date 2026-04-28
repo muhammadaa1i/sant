@@ -17,6 +17,75 @@
     "description": "Parkent shahrida, dengiz sathidan 1300 metr balandlikda joylashgan. Biz toza tog' havosi, professional shifokorlar va 40 dan ortiq muolajalarni taklif etamiz.",
     "sub_description": "Davolanish va dam olishni o'zida mujassam etgan noyob maskan. Tana va ruhni tiklash uchun ideal joy."
   },
+  "why_us": {
+    "title": "Nega aynan biz?",
+    "items": [
+      "Ko'p yillik tajribali professional shifokorlar jamoasi",
+      "Har bir mijoz uchun yuqori sifatli servis",
+      "Davolanish, xordiq chiqarish va tiklanish bir maskanda",
+      "25+ ortiq tibbiy muolajalar va malakali xizmat ko'rsatish"
+    ]
+  },
+  "our_goal": {
+    "title": "Bizning maqsadimiz",
+    "description1": "Har bir mijozga individual yondashuv asosida sog‘lomlashtirish va tiklanish imkoniyatini yaratishdir. Biz zamonaviy fizioterapiya usullari, tajribali shifokorlar va qulay muhit orqali nafaqat kasalliklarni davolash, balki organizmni to‘liq tiklashga yordam beramiz.",
+    "description2": "Biz uchun eng muhim natija — sizning sog‘lig‘ingiz yaxshilanishi, og‘riqlardan xalos bo‘lishingiz va kundalik hayotga energiya bilan qaytishingizdir. Har bir dastur sizning holatingizdan kelib chiqib tuziladi va maksimal samaraga yo‘naltiriladi.",
+    "cta": "Bugunoq sog‘lig‘ingizga sarmoya qiling — biz bilan bog‘laning va individual davolash dasturingizni boshlang!",
+    "btn": "Bog'lanish"
+  },
+  "faq": {
+    "title": "Ko'p so'raladigan savollar",
+    "items": [
+      {
+        "question": "Buloqboshi sanatoriyasida qanday kasalliklar davolanadi?",
+        "answer": "Sanatoriyada tayanch-harakat tizimi, asab tizimi, yurak-qon tomir kasalliklari va umumiy tiklanish uchun samarali muolajalar mavjud. Sizga mos davolash kursini bilish uchun hoziroq yozing!"
+      },
+      {
+        "question": "Oldindan yozilish shartmi?",
+        "answer": "Ha, sanatoriyamiz 80o'rinli bo'lgani bilan biroq joylar cheklanganligi sabab oldindan band qilib bron qilish tavsiya etiladi. Bugunoq joyingizni band qiling — kechikmang!"
+      },
+      {
+        "question": "Davolanish qancha davom etadi?",
+        "answer": "Eng kam yotish muddati 5kun, ammo ko‘pchilik mijozlarimiz uchun optimal variant 7–14 kunlik kurs optimal natija beradi. Qaysi kurs sizga mosligini aniqlash uchun bepul maslahat oling!"
+      },
+      {
+        "question": "Qanday muolajalar mavjud?",
+        "answer": "Elektroforez, ultratovush, darsonval, ingalyatsiya, magnitterapiya, gidromassaj, hijama, zuluk qo'yish, igna sanchish va boshqa zamonaviy fizioterapiya usullari qo‘llaniladi. To‘liq muolajalar ro‘yxatini olish uchun murojaat qiling!"
+      },
+      {
+        "question": "Shifokor ko‘rigi bo‘ladimi?",
+        "answer": "Ha, har bir bemor individual ko‘rikdan o‘tadi va shaxsiy davolash rejasi tuziladi. Sanatoriya ichida arzon narxlarda dorixona ham mavjud. Individual yondashuv uchun hoziroq yoziling!"
+      },
+      {
+        "question": "Ovqatlanish qanday tashkil etilgan?",
+        "answer": "Sanatoriyamizda 3 mahal issiq ovqat, 2xil suyuq-quyuq taom, salatlar, meva va shirinliklar tortiladi. Sog‘lom va muvozanatli ovqatlanish, kerak bo‘lsa dietik parxez menyular ham mavjud. Sog‘lom dam olishni bugun boshlang!"
+      },
+      {
+        "question": "Narxlar nimaga bog‘liq?",
+        "answer": "Narxlar xonalarning jihozlanganligi, kattaligi, hajmi hamda yashash sharoiti va davolash kursiga qarab belgilanadi. Aniq narxni bilish uchun bizga yozing!"
+      },
+      {
+        "question": "Oilaviy dam olish mumkinmi?",
+        "answer": "Ha, sanatoriya farzandlar ota ona bobo buvilar bilan oilaviy dam olish uchun ham juda qulay. Oilangiz bilan sog‘lom dam olishni rejalashtiring!"
+      },
+      {
+        "question": "Qanday hujjatlar kerak?",
+        "answer": "Pasport va mavjud tibbiy hujjatlar bo‘lsa, ularni o'zingoz bilan birga olib kelish tavsiya etiladi. Ro‘yxatdan o‘tishni hoziroq boshlang!"
+      },
+      {
+        "question": "Qanday qo'shimcha xizmatlar mavjud?",
+        "answer": "Eco turizm va ziyorat turizmi yo'lga qo'yilgan bo'liq, So'qoq, Kumushkon tog'lari, Xazrat Ali va Zarkent ziyoratgohi, Quyosh muzeyi kabi diqqatga sazovor joylarga GID lar bilan birga maxsus transport vositasida bepul tarzda har hafta dam olish kunlari tashrif buyuriladi."
+      },
+      {
+        "question": "Madaniy tadbirlar ham bo'lib o'tadimi?",
+        "answer": "Ha Sanatoriyamizda kunora milliy va estrada yo'nalishida ijod qilivchi qo'shiqchilar konsertlari, jonli ijro, hajviy chiqishlar, raqs va she'rxonlik kechalari tashkil etiladi."
+      },
+      {
+        "question": "Qanday bog‘lanish mumkin?",
+        "answer": "Telefon yoki Telegram orqali tezkor aloqa qilishingiz mumkin. Hoziroq qo‘ng‘iroq qiling yoki Telegram’dan yozing. Joylar tez to‘lyapti — ulgurib qoling!"
+      }
+    ]
+  },
   "mini_services": {
     "title": "Bizning xizmatlar",
     "subtitle": "Buloqboshi sanatoriyasi sog'lig'ingizni tiklash va mustahkamlash uchun zamonaviy va samarali muolajalarni taklif etadi. Bizda tibbiy diagnostika, fizioterapiya, fitoterapiya, gidroterapiya va turli xil massaj xizmatlari mavjud. Yuqori malakali shifokorlarimiz individual yondashuv asosida xizmat ko'rsatib, sog'lig'ingizni yaxshilashga yordam beradi.",
@@ -27,7 +96,9 @@
           "UTT (Ultratovush tekshiruvi)",
           "Kardiogramma",
           "Umumiy qon tahlillari",
-          "Umumiy peshob tahlili"
+          "Umumiy peshob tahlili",
+          "Qon biokimyoviy tahlili",
+          "Revmoproba tahlili"
         ],
         "btn": "Batafsil ko'rish"
       },
@@ -47,7 +118,11 @@
           "Kardiolog qabuli",
           "Terapevt qabuli",
           "UTT shifokori qabuli",
-          "Ginekolog qabuli"
+          "Travmatolog shifokor qabuli",
+          "Nevrolog shifokor qabuli",
+          "Endokrinolog shifokor qabuli",
+          "Fizioterapevt shifokor qabuli",
+          "Tabib qabuli"
         ],
         "btn": "Batafsil ko'rish"
       },
@@ -57,7 +132,7 @@
           "Toza tog' havosida dam olish",
           "Sauna sog'lomlashtirish uchun",
           "Bilyard, stol tennisi",
-          "Yozgi va qishgi basseynlar"
+          "Basseynlar"
         ],
         "btn": "Batafsil ko'rish"
       }
@@ -207,6 +282,16 @@
           "Yallig‘lanish jarayoni sekinlashadi"
         ],
         "image": "/devices/LAZERTERAPIYA VLOK.png"
+      },
+      {
+        "title": "БАССЕЙН",
+        "desc": "Suvda davolovchi mashqlar va harakatlar.",
+        "list": [
+          "Umurtqaga yuk kamayadi",
+          "Mushaklar kuchayadi",
+          "Yurak-qon tomir tizimi yaxshilanadi"
+        ],
+        "image": "/devices/БАССЕЙН.png"
       }
     ]
   },

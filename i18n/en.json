@@ -17,6 +17,75 @@
     "description": "Located at an altitude of 1,300 meters above sea level in the city of Parkent. We offer clean mountain air, professional doctors, and over 40 types of procedures.",
     "sub_description": "A unique place combining treatment and relaxation. Ideal for restoring the body and strengthening health in a calm mountain atmosphere."
   },
+  "why_us": {
+    "title": "Why choose us?",
+    "items": [
+      "Team of professional doctors with many years of experience",
+      "High-quality service for every guest",
+      "Treatment, relaxation, and recovery in one place",
+      "25+ medical procedures and qualified service"
+    ]
+  },
+  "our_goal": {
+    "title": "Our goal",
+    "description1": "To create an opportunity for healing and recovery based on an individual approach to each client. We help not only to treat diseases but also to fully restore the body through modern physiotherapy methods, experienced doctors, and a comfortable environment.",
+    "description2": "The most important result for us is the improvement of your health, getting rid of pain, and returning to daily life with energy. Each program is developed based on your condition and aimed at maximum effectiveness.",
+    "cta": "Invest in your health today — contact us and start your individual treatment program!",
+    "btn": "Contact us"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What diseases are treated in Buloqboshi Sanatorium?",
+        "answer": "The sanatorium offers effective treatments for the musculoskeletal system, nervous system, cardiovascular diseases, and general recovery. Contact us now to find the right treatment course for you!"
+      },
+      {
+        "question": "Is advance booking required?",
+        "answer": "Yes, our sanatorium has 80 seats, but due to limited space, advance booking is highly recommended. Reserve your spot today — don't be late!"
+      },
+      {
+        "question": "How long does the treatment last?",
+        "answer": "The minimum stay is 5 days, but for most of our clients, a 7–14 day course gives the optimal result. Get a free consultation to determine which course is right for you!"
+      },
+      {
+        "question": "What procedures are available?",
+        "answer": "Electrophoresis, ultrasound, darsonval, inhalation, magnetotherapy, hydromassage, hijama, leech therapy, acupuncture, and other modern physiotherapy methods are used. Contact us for the full list of treatments!"
+      },
+      {
+        "question": "Will there be a doctor's examination?",
+        "answer": "Yes, every patient undergoes an individual examination, and a personal treatment plan is created. There is also a pharmacy with affordable prices inside the sanatorium. Sign up now for an individual approach!"
+      },
+      {
+        "question": "How is the catering organized?",
+        "answer": "Our sanatorium serves 3 hot meals a day: 2 types of liquid and solid dishes, salads, fruits, and sweets. Healthy and balanced nutrition is available, including dietary menus if needed. Start your healthy holiday today!"
+      },
+      {
+        "question": "What do the prices depend on?",
+        "answer": "Prices depend on the room equipment, size, volume, as well as living conditions and the treatment course. Contact us to find out the exact price!"
+      },
+      {
+        "question": "Is family vacation possible?",
+        "answer": "Yes, the sanatorium is very convenient for family holidays with children, parents, and grandparents. Plan a healthy vacation with your family!"
+      },
+      {
+        "question": "What documents are needed?",
+        "answer": "It is recommended to bring your passport and any existing medical documents. Start your registration now!"
+      },
+      {
+        "question": "What additional services are available?",
+        "answer": "Eco-tourism and pilgrimage tourism are established. Every weekend, free trips are organized by special transport with guides to attractions such as Sukok and Kumushkon mountains, Hazrat Ali and Zarkent shrines, and the Sun Museum."
+      },
+      {
+        "question": "Are there cultural events?",
+        "answer": "Yes, in our sanatorium, concerts of national and pop singers, live performances, humorous shows, dance and poetry evenings are organized every other day."
+      },
+      {
+        "question": "How can I contact you?",
+        "answer": "You can contact us quickly via phone or Telegram. Call now or write on Telegram. Places fill up fast — catch yours!"
+      }
+    ]
+  },
   "mini_services": {
     "title": "Our services",
     "subtitle": "Buloqboshi Sanatorium offers modern and effective treatments to restore and strengthen your health. We offer medical diagnostics, physiotherapy, herbal medicine, hydrotherapy, and various massage services. Our highly qualified doctors provide services based on an individual approach to help improve your health.",
@@ -27,7 +96,9 @@
           "Ultrasound examination",
           "Electrocardiogram",
           "General blood tests",
-          "General urine analysis"
+          "General urine analysis",
+          "Blood biochemistry analysis",
+          "Rheumatoid factor (Revmoproba) tests"
         ],
         "btn": "Read more"
       },
@@ -47,7 +118,11 @@
           "Cardiologist",
           "Therapist",
           "Ultrasound doctor",
-          "Gynecologist"
+          "Traumatologist consultation",
+          "Neurologist consultation",
+          "Endocrinologist consultation",
+          "Physiotherapist consultation",
+          "Traditional healer (Tabib)"
         ],
         "btn": "Read more"
       },
@@ -57,7 +132,7 @@
           "Relaxation in fresh mountain air",
           "Sauna for health improvement",
           "Billiards, table tennis",
-          "Summer and winter pools"
+          "Swimming pools"
         ],
         "btn": "Read more"
       }
@@ -207,6 +282,16 @@
           "Slows down the inflammatory process"
         ],
         "image": "/devices/LAZERTERAPIYA VLOK.png"
+      },
+      {
+        "title": "Swimming Pool",
+        "desc": "Water-based therapeutic exercises and movements.",
+        "list": [
+          "Reduces load on the spine",
+          "Strengthens muscles",
+          "Improves cardiovascular system"
+        ],
+        "image": "/devices/БАССЕЙН.png"
       }
     ]
   },
@@ -272,8 +357,8 @@
     "top_activities_title": "TOP 3 activities by our guests",
     "top_activities": [
       {
-        "title": "Hijama and Leech Therapy",
-        "desc": "Hijama and leech therapy at \"Buloqboshi Sanatorium\" is a unique method of healing the body. This ancient therapy helps deeply cleanse blood vessels, restore energy balance, remove toxins, relax muscles, and improve blood circulation.",
+        "title": "Hijama and Leech therapy",
+        "desc": "Hijama and leech therapy at \"Buloqboshi Sanatorium\" is a unique way of healing the body. This ancient therapy helps to deeply clean the blood vessels, restore energy balance, remove toxins, relax muscles, and improve blood circulation.",
         "benefits_title": "Benefits:",
         "benefits": [
           "Effective fight against stress and fatigue",

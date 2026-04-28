@@ -18,6 +18,15 @@ const Contact = dynamic(() => import("@/components/features/Contact"), {
 const MapSection = dynamic(() => import("@/components/features/MapSection"), {
   loading: () => <div className="h-96 w-full animate-pulse bg-muted/10" />
 });
+const WhyUs = dynamic(() => import("@/components/features/WhyUs"), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-muted/20" />
+});
+const OurGoal = dynamic(() => import("@/components/features/OurGoal"), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-muted/20" />
+});
+const FAQ = dynamic(() => import("@/components/features/FAQ"), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-muted/20" />
+});
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -30,6 +39,18 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       
       <Suspense fallback={<div className="h-96 w-full animate-pulse bg-muted/20" />}>
         <Services dict={dict} />
+      </Suspense>
+
+      <Suspense fallback={<div className="h-96 w-full animate-pulse bg-muted/20" />}>
+        <WhyUs dict={dict} />
+      </Suspense>
+
+      <Suspense fallback={<div className="h-96 w-full animate-pulse bg-muted/20" />}>
+        <OurGoal dict={dict} />
+      </Suspense>
+
+      <Suspense fallback={<div className="h-96 w-full animate-pulse bg-muted/20" />}>
+        <FAQ dict={dict} />
       </Suspense>
 
       <Suspense fallback={<div className="h-96 w-full animate-pulse bg-muted/10" />}>

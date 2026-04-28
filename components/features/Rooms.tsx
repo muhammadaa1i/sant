@@ -83,7 +83,8 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
               key={room.title}
               className="group relative overflow-hidden h-[430px] sm:h-[500px] ring-1 ring-black/10"
               data-aos="fade-up"
-              data-aos-delay={idx * 120}
+              data-aos-delay={idx * 50}
+              data-aos-offset="100"
               suppressHydrationWarning
             >
               <Image
@@ -92,6 +93,7 @@ export default function Rooms({ dict, lang }: { dict: Dictionary, lang: string }
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                quality={60}
               />
 
               <div className="absolute left-5 right-5 top-5 sm:left-7 sm:right-7 text-white">

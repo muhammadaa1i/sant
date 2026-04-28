@@ -17,6 +17,24 @@ export type Dictionary = {
     description: string;
     sub_description: string;
   };
+  why_us: {
+    title: string;
+    items: string[];
+  };
+  our_goal: {
+    title: string;
+    description1: string;
+    description2: string;
+    cta: string;
+    btn: string;
+  };
+  faq: {
+    title: string;
+    items: {
+      question: string;
+      answer: string;
+    }[];
+  };
   mini_services: {
     title: string;
     subtitle: string;

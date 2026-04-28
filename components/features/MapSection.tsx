@@ -26,7 +26,7 @@ export default function MapSection({ dict }: { dict: Dictionary }) {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-muted/30 to-background pointer-events-none"></div>
       
       <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
-        <div className="text-center mb-16" data-aos="fade-up" suppressHydrationWarning>
+        <div className="text-center mb-16" data-aos="fade-up" data-aos-offset="100" suppressHydrationWarning>
           <span className="text-primary font-semibold tracking-widest uppercase text-sm mb-3 block">
             {dict?.footer?.address || ''}
           </span>
@@ -41,6 +41,7 @@ export default function MapSection({ dict }: { dict: Dictionary }) {
         <div 
           className="group relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-border bg-muted flex items-center justify-center transition-all duration-700"
           data-aos="fade-up"
+          data-aos-offset="100"
           suppressHydrationWarning
         >
           <Suspense fallback={

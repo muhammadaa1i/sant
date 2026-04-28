@@ -9,8 +9,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
     '/services/image copy.png',
     '/services/image copy 2.png',
     '/services/image copy 3.png',
-    '/services/image copy 4.png',
-    '/services/eco_tours.png',
+    '/services/eco-tours.png',
   ];
 
   const images2 = [
@@ -18,6 +17,12 @@ export default function Services({ dict }: { dict: Dictionary }) {
     '/services2/image copy.png',
     '/services2/image copy 2.png',
     '/services2/image copy 3.png',
+  ];
+
+  const activitiesImages = [
+    '/services/activities/222.png',
+    '/services/activities/image copy.png',
+    '/services/activities/image copy 2.png',
   ];
 
   const massageIcons = [
@@ -42,9 +47,14 @@ export default function Services({ dict }: { dict: Dictionary }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32" data-aos="fade-up" suppressHydrationWarning>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32" suppressHydrationWarning>
           {dict.physio_services.items.map((service, idx) => (
-            <div key={idx} className="group bg-white hover:bg-primary rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-100/50">
+            <div 
+              key={idx} 
+              className="group bg-white hover:bg-primary rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-100/50"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
               <div className="relative h-60 w-full flex items-center justify-center border-b border-slate-100/50 group-hover:border-white/20 transition-colors z-10">
                 <Image 
                   src={service.image} 
@@ -82,9 +92,14 @@ export default function Services({ dict }: { dict: Dictionary }) {
         </div>
 
         {/* Mini Services Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12" data-aos="fade-up" suppressHydrationWarning>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-24" suppressHydrationWarning>
           {dict.mini_services.cards.map((card, idx) => (
-            <div key={idx} className="group bg-white hover:bg-primary rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-100/50">
+            <div 
+              key={idx} 
+              className="group bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full border border-slate-100/50"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
               <div className="relative h-48 sm:h-52 w-full">
                 <Image 
                   src={images2[idx] ?? images2[0]} 
@@ -95,29 +110,20 @@ export default function Services({ dict }: { dict: Dictionary }) {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-4 transition-colors">{card.title}</h3>
-                <ul className="space-y-3 mb-8 flex-grow">
+                <h3 className="text-xl font-bold text-slate-800 mb-4 transition-colors">{card.title}</h3>
+                <ul className="space-y-3 flex-grow">
                   {card.items.map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-slate-600 group-hover:text-white/90 leading-relaxed transition-colors">
-                      <div className="min-w-4 w-4 h-4 mt-0.5 mr-2.5 rounded-full flex items-center justify-center bg-primary/10 group-hover:bg-white/20 transition-colors">
-                         <div className="w-1.5 h-1.5 rounded-full bg-primary group-hover:bg-white transition-colors" />
+                    <li key={i} className="flex items-start text-sm text-slate-600 leading-relaxed transition-colors">
+                      <div className="min-w-4 w-4 h-4 mt-0.5 mr-2.5 rounded-full flex items-center justify-center bg-primary/10 transition-colors">
+                         <div className="w-1.5 h-1.5 rounded-full bg-primary transition-colors" />
                       </div>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3.5 bg-primary hover:bg-primary/90 group-hover:bg-white group-hover:text-primary text-white rounded-xl text-sm font-semibold transition-colors mt-auto">
-                  {card.btn}
-                </button>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-center mb-24" data-aos="fade-up" suppressHydrationWarning>
-          <button className="px-8 py-3.5 border border-primary text-primary hover:bg-primary hover:text-white rounded-xl text-sm font-semibold transition-colors">
-            {dict.mini_services.view_all}
-          </button>
         </div>
 
         {/* Full Services Section */}
@@ -222,6 +228,62 @@ export default function Services({ dict }: { dict: Dictionary }) {
             </div>
           </div>
         )}
+        {/* Top Activities Section */}
+        <div className="mt-32">
+          <div className="text-center mb-16 space-y-4" data-aos="fade-up" suppressHydrationWarning>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              {dict.services.top_activities_title}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {dict.services.top_activities.map((activity, idx) => (
+              <div 
+                key={idx} 
+                className="bg-white rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-100/50"
+                data-aos="fade-up"
+                data-aos-delay={idx * 100}
+                suppressHydrationWarning
+              >
+                <div className="relative h-64 sm:h-72 w-full p-4">
+                  <div className="relative h-full w-full rounded-[1.5rem] overflow-hidden">
+                    <Image 
+                      src={activitiesImages[idx] ?? activitiesImages[0]} 
+                      alt={activity.title} 
+                      fill 
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    />
+                    <div className="absolute bottom-4 left-4 bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-medium shadow-lg">
+                      {activity.title}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="px-8 pb-8 flex flex-col flex-grow">
+                  <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6 font-light">
+                    {activity.desc}
+                  </p>
+                  
+                  {activity.benefits && activity.benefits.length > 0 && (
+                    <div className="space-y-3 mt-auto">
+                      <h4 className="text-sm font-bold text-slate-800 mb-2">{activity.benefits_title}</h4>
+                      <ul className="space-y-2.5">
+                        {activity.benefits.map((benefit, i) => (
+                          <li key={i} className="flex items-start text-sm text-slate-600 leading-relaxed">
+                            <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 mr-2.5 flex-shrink-0" />
+                            <span>{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Customer Reviews Section */}
         <CustomerReviews dict={dict} />
       </div>
