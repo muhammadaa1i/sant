@@ -17,14 +17,13 @@ export async function POST(request: NextRequest) {
 
         // Format message for Telegram
         const message = `
-        🏨 *Yangi murojaat - Buloqboshi Sanatorium*
+🏨 *Yangi murojaat - Buloqboshi Sanatorium*
 
-        👤 *Ism:* ${name}
-        📞 *Telefon:* ${phone}
-        ${comment ? `💬 *Izoh:* ${comment}` : ''}
+👤 *Ism:* ${name}
+📞 *Telefon:* ${phone}
+${comment ? `💬 *Izoh:* ${comment}` : ''}
 
-        ⏰ *Vaqt:* ${new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' })}
-        `.trim();
+⏰ *Vaqt:* ${new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' })}`.trim();
 
         // Send to Telegram
         const telegramUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
